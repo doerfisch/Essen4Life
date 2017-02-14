@@ -1,0 +1,70 @@
+<html>
+<head>
+  <meta content="width=device-width" />
+  <title>CHECK!</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<nav id="upperNavbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <button type="button" class="navbar-toggle collapsed"  data-target=".navbarElements">
+          <div><span class="icon-bar"></span></div>
+           <div><span class="icon-bar"></span></div>
+           <div><span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+           </div>
+
+
+        </button>
+      <div class="brand-centered navbar-header">
+        <a class="navbar-brand"><img src="images/images-master/logo.png" alt="#">
+        </a>
+      </div>
+
+      <!--DROPDOWNS-->
+
+      <div id="navbarElements" class="navbar-collapse collapse">
+        <!-- Dropdown-left -->
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown">
+                <div data-toggle="dropdown">
+                <img src="images/images-master/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview">
+                <p class="burgerMenueImg">Kompetenzliste</p>
+                </div>
+                <ul class="dropdown-menu leftDrop" role="menu">
+                        <li   class="firstDropLeft firstlistitem" >
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><img src="images/images-master/confirmation.png" alt="#"></li>
+                                <li class="dropdownGap"><p>CHECK!<br>Kompetenzliste</p></li>
+                            </ul>
+                        </li>
+                        <ul class="dropdown-menu scrollable-menu">
+                        <li id="dasbinich"><a onclick="kompetenzAlle(1)">DAS BIN ICH!</a></li>
+                        <li id="ichunddieanderen"><a onclick="kompetenzAlle(2)">ICH UND DIE ANDEREN</a></li>
+                        <li id="dieweltummichherum"><a onclick="kompetenzAlle(3)">DIE WELT UM MICH HERUM</a></li>
+                        <li id="ichwerdeselbststaendig"><a onclick="kompetenzAlle(4)">ICH WERDE SELBSTSTÄNDIG</a></li>
+                        <li id="sichbewegen"><a onclick="kompetenzAlle(5)">SICH BEWEGEN</a></li>
+                        <li id="lernen"><a onclick="kompetenzAlle(6)">LERNEN</a></li>
+                        <li id="arbeiten"><a onclick="kompetenzAlle(7)">ARBEITEN</a></li>
+                        <li id="gestaltenunderschaffen"><a onclick="kompetenzAlle(8)">GESTALTEN UND ERSCHAFFEN</a></li>
+                        <li id="sprechen"><a onclick="kompetenzAlle(9)">SPRECHEN</a></li>
+                        <li id="fremdsprache"><a onclick="kompetenzAlle(10)">FREMDSPRACHE</a></li>
+                        <li id="lesen"><a onclick="kompetenzAlle(11)">LESEN</a></li>
+                        <li id="schreiben"><a onclick="kompetenzAlle(12)">SCHREIBEN</a></li>
+                        <li id="messen"><a onclick="kompetenzAlle(13)">MESSEN</a></li>
+                        <li id="loesungenfinden"><a onclick="kompetenzAlle(14)">LÖSUNGEN FINDEN</a></li>
+                        <li id="zaehlenundrechnen"><a onclick="kompetenzAlle(15)">ZÄHLEN UND RECHNEN</a></li>
+                        <li class="lastListItem" id="formundraumentdecken"><a onclick="kompetenzAlle(16)">FORM UND RAUM ENTDECKEN</a></li>
+                    </ul>
+                </ul>
+
+                <nav id="footer" class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <img src="images/images-master/login/footer.png">
+                <p id="head2">edition 2016 dark night blue 1.0</p>
+            </div>
+        </nav>

@@ -5023,6 +5023,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+    background-color: #001a3a;
 }
 
 @media (min-width: 768px) {
@@ -5504,7 +5505,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 .navbar-inverse {
-    background-color: #222;
+    background-color: #001a3a;
     border-color: #080808;
 }
 
