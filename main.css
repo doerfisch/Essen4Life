@@ -1,7 +1,7 @@
 body {
     background:white;
 }
-#headerImage{
+#headerImageLogin{
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -42,12 +42,12 @@ body {
     font-family: Roboto Thin;
 
 }
-#footerImage{
+.footerImage{
   display: table;
   margin-left: auto;
   margin-right: auto;
 }
-#footerText {
+#footerLogin {
   color:#8da6d6;
   padding: 5px;
   margin: 0 auto;
@@ -58,12 +58,11 @@ width:  800px;
 left: 50%;
 z-index: 1;
 margin-left: -400px;
-
 }
-#footerText a{
+#footerLogin a{
   color:#8da6d6;
 }
-#blackText{
+#blackTextLogin{
   color: black;
 }
 
@@ -79,4 +78,23 @@ margin-left: -400px;
 
 .open .dropdown-toggle-logout{
     content: url("images/images-master/logout-active.png")
+}
+
+#footerMain{
+  color:#8da6d6;
+  padding: 5px;
+  margin: 0 auto;
+  position:fixed;
+    bottom: 0;
+    text-align: center;
+width:  800px;
+left: 50%;
+z-index: 1;
+margin-left: -400px;
+}
+
+#footer{
+  height: 50px;
+  background-color: #001a3a;
+  padding-top: 5px;
 }
