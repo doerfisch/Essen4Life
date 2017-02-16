@@ -98,3 +98,81 @@ margin-left: -400px;
   background-color: #001a3a;
   padding-top: 5px;
 }
+.dropbtnKompetenzen {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001a3a;
+    color: white !important;
+    width: 250px;
+    font-size: 13pt;
+  font-family: Franklin Gothic Heavy;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+#chap1{
+  background-color: #79ab2e;
+}
+#chap2{
+  background-color: #c6d54f;
+}
+#chap3{
+  background-color: #94c122;
+}
+#chap4{
+  background-color: #44b284;
+}
+#chap5{
+  background-color: #ffdd00;
+}
+#chap6{
+  background-color: #ffed98;
+}
+#chap7{
+  background-color: #fbb900;
+}
+#chap8{
+  background-color: #ef7d25;
+}
+#chap9{
+  background-color: #d60d66;
+}
+#chap10{
+  background-color: #ea518d;
+}
+#chap11{
+  background-color: #f29db7;
+}
+#chap12{
+  background-color: #a62068;
+}
+#chap13{
+  background-color: #008fc8;
+}
+#chap14{
+  background-color: #62c2d0;
+}
+#chap15{
+  background-color: #004077;
+}
+#chap16{
+  background-color: #3873b9;
+}

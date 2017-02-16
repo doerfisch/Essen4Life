@@ -20,47 +20,41 @@
 
 
         </button>
-      <div class="brand-centered navbar-header">
-        <a class="navbar-brand"><img src="images/images-master/logo.png" alt="Logo">
-        </a>
-      </div>
+
 
       <!--DROPDOWNS-->
 
       <div id="navbarElements" class="navbar-collapse collapse">
         <!-- Dropdown-left -->
           <ul class="nav navbar-nav navbar-left">
-            <li class="dropdown">
-                <div data-toggle="dropdown">
-                <img src="images/images-master/chapterOverview-inactive.png" class="dropdown-toggle-chapterOverview">
-                <p class="burgerMenueImg">Kompetenzliste</p>
-                </div>
-                <ul class="dropdown-menu leftDrop" role="menu">
-                        <li   class="firstDropLeft firstlistitem" >
-                            <ul class="nav navbar-nav navbar-left">
-                                <li><img src="images/images-master/confirmation.png" alt="#"></li>
-                                <li class="dropdownGap"><p>CHECK!<br>Kompetenzliste</p></li>
-                            </ul>
-                        </li>
-                        <ul class="dropdown-menu scrollable-menu">
-                        <li id="dasbinich"><a onclick="kompetenzAlle(1)">DAS BIN ICH!</a></li>
-                        <li id="ichunddieanderen"><a onclick="kompetenzAlle(2)">ICH UND DIE ANDEREN</a></li>
-                        <li id="dieweltummichherum"><a onclick="kompetenzAlle(3)">DIE WELT UM MICH HERUM</a></li>
-                        <li id="ichwerdeselbststaendig"><a onclick="kompetenzAlle(4)">ICH WERDE SELBSTSTÄNDIG</a></li>
-                        <li id="sichbewegen"><a onclick="kompetenzAlle(5)">SICH BEWEGEN</a></li>
-                        <li id="lernen"><a onclick="kompetenzAlle(6)">LERNEN</a></li>
-                        <li id="arbeiten"><a onclick="kompetenzAlle(7)">ARBEITEN</a></li>
-                        <li id="gestaltenunderschaffen"><a onclick="kompetenzAlle(8)">GESTALTEN UND ERSCHAFFEN</a></li>
-                        <li id="sprechen"><a onclick="kompetenzAlle(9)">SPRECHEN</a></li>
-                        <li id="fremdsprache"><a onclick="kompetenzAlle(10)">FREMDSPRACHE</a></li>
-                        <li id="lesen"><a onclick="kompetenzAlle(11)">LESEN</a></li>
-                        <li id="schreiben"><a onclick="kompetenzAlle(12)">SCHREIBEN</a></li>
-                        <li id="messen"><a onclick="kompetenzAlle(13)">MESSEN</a></li>
-                        <li id="loesungenfinden"><a onclick="kompetenzAlle(14)">LÖSUNGEN FINDEN</a></li>
-                        <li id="zaehlenundrechnen"><a onclick="kompetenzAlle(15)">ZÄHLEN UND RECHNEN</a></li>
-                        <li class="lastListItem" id="formundraumentdecken"><a onclick="kompetenzAlle(16)">FORM UND RAUM ENTDECKEN</a></li>
-                    </ul>
-                </ul>
+            <div class="dropdown">
+              <li class "dropbtnKompetenzen"><img src = "images/images-master/chapterOverview-inactive.png"></li>
+              <div class = "dropdown-content">
+                <li>
+                  <li> <img src = "images/images-master/confirmation.png"></li>
+                  <li> CHECK! <br> KOMPETENZLISTE</li>
+                </li>
+
+                <li id ="chap1"><a href="#">DAS BIN ICH!</a></li>
+                <li id ="chap2"><a href="#">ICH UND DIE ANDEREN</a></li>
+                <li id ="chap3"><a href="#">DIE WELT UM MICH HERUM</a></li>
+                <li id ="chap4"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                <li id ="chap5"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                <li id ="chap6"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                <li id ="chap7"><a href="#">SICH BEWEGEN</a></li>
+                <li id ="chap8"><a href="#">LERNEN</a></li>
+                <li id ="chap9"><a href="#">ARBEITEN</a></li>
+                <li id ="chap10"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
+                <li id ="chap11"><a href="#">SPRECHEN</a></li>
+                <li id ="chap12"><a href="#">FREMDSPRACHE</a></li>
+                <li id ="chap13"><a href="#">LESEN</a></li>
+                <li id ="chap14"><a href="#">SCHREIBEN</a></li>
+                <li id ="chap15"><a href="#">MESSEN</a></li>
+                <li id ="chap16"><a href="#">LÖSUNGEN FINDEN</a></li>
+                <li id ="chap17"><a href="#">ZÄHLEN UND RECHNEN</a></li>
+                <li id ="chap18"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
+            </div>
+
 
                 <li class="dropdown">
                <div data-toggle="dropdown">
@@ -114,6 +108,11 @@
                </ul>
            </li>
        </ul>
+
+       <div class="brand-centered navbar-header">
+         <a  class="navbar-brand"><img src="images/images-master/logo.png" alt="Logo">
+         </a>
+       </div>
        <!-- Dropdown-right -->
          <ul class="nav navbar-nav navbar-right">
            <li class="dropdown">
