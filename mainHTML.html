@@ -17,18 +17,17 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
            </div>
-
-
         </button>
 
 
       <!--DROPDOWNS-->
 
+
       <div id="navbarElements" class="navbar-collapse collapse">
         <!-- Dropdown-left -->
           <ul class="nav navbar-nav navbar-left">
             <div class="dropdown">
-              <li class "dropbtnKompetenzen"><img src = "images/images-master/chapterOverview-inactive.png"></li>
+              <li id ="btn1" class "dropbtn"><img src = "images/images-master/chapterOverview-inactive.png"></li>
               <div class = "dropdown-content">
                 <li>
                   <li> <img src = "images/images-master/confirmation.png"></li>
@@ -54,65 +53,53 @@
                 <li id ="chap17"><a href="#">ZÄHLEN UND RECHNEN</a></li>
                 <li id ="chap18"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
             </div>
+          </div>
+</ul>
+
+  <ul class="nav navbar-nav navbar-left">
+                <div class="dropdown">
+                <li id = "btn2" class ="dropbtn"> <img src="images/images-master/educationalPlan-inactive.png"></li>
+                <div class = "dropdown-content">
+                  <li><img src="images/images-master/educationalPlan-big.png" alt=""></li>
+                  <li><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
+                  <!-- hier muss dann der jeweilige Förderplan rein mit JS -->
+                </div>
+</ul>
+
+  <ul class="nav navbar-nav navbar-left">
+        <div class="dropdown">
+                    <li id = "btn3" class= "dropbtn"><img src = "images/images-master/achievedCompetences-inactive.png"></li>
+                    <div class = "dropdown-content">
+                      <li>
+                        <li> <img src = "images/images-master/achievedCompetences-inactive.png"></li>
+                        <li> DAS <br> KANN <br> ICH!</li>
+                      </li>
+                      <li id= "all"><a href="#">ALLE KOMPETENZEN!</a></li>
+                      <li id ="chap1"><a href="#">DAS BIN ICH!</a></li>
+                      <li id ="chap2"><a href="#">ICH UND DIE ANDEREN</a></li>
+                      <li id ="chap3"><a href="#">DIE WELT UM MICH HERUM</a></li>
+                      <li id ="chap4"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                      <li id ="chap5"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                      <li id ="chap6"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
+                      <li id ="chap7"><a href="#">SICH BEWEGEN</a></li>
+                      <li id ="chap8"><a href="#">LERNEN</a></li>
+                      <li id ="chap9"><a href="#">ARBEITEN</a></li>
+                      <li id ="chap10"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
+                      <li id ="chap11"><a href="#">SPRECHEN</a></li>
+                      <li id ="chap12"><a href="#">FREMDSPRACHE</a></li>
+                      <li id ="chap13"><a href="#">LESEN</a></li>
+                      <li id ="chap14"><a href="#">SCHREIBEN</a></li>
+                      <li id ="chap15"><a href="#">MESSEN</a></li>
+                      <li id ="chap16"><a href="#">LÖSUNGEN FINDEN</a></li>
+                      <li id ="chap17"><a href="#">ZÄHLEN UND RECHNEN</a></li>
+                      <li id ="chap18"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
+                  </div>
+                </div>
+              </ul>
 
 
-                <li class="dropdown">
-               <div data-toggle="dropdown">
-               <img src="images/images-master/educationalPlan-inactive.png" class="dropdown-toggle-educationalPlan">
-               <p class="burgerMenuPicture">Förderplan</p>
-               </div>
+<img id ="logo" src="images/images-master/logo.png">
 
-               <ul class="dropdown-menu leftDrop">
-                   <li  class="firstlistitem firstDropLeft" >
-                           <ul class="nav navbar-nav navbar-left">
-                               <li><img src="images/images-master/educationalPlan-big.png" alt=""></li>
-                               <li class="dropdownSpace"><p> FÖRDERPLAN<br>MATHE ZR BIS ZUR 10</p></li>
-                           </ul>
-                       </li>
-                    <ul class="dropdown-menu scrollable-menu dropdownBLAU" id="educationplan">
-       <!--dynamisch gefüllt mit JS-->
-                   </ul>
-               </ul>
-           </li>
-           <li class="dropdown">
-               <div data-toggle="dropdown">
-               <img src="images/images-master/achievedCompetences-inactive.png" class="dropdown-toggle-achievedCompetences">
-               <p class="burgerMenuPicture">Das kann Ich</p>
-               </div>
-               <ul class="dropdown-menu leftDrop">
-                   <li class="firstlistitem firstDropLeft" >
-                           <ul class="nav navbar-nav navbar-left">
-                               <li><img src="images/images-master/achievedCompetences-big.png" alt="#"></li>
-                               <li class="deleteProfile"><p>DAS<br>KANN<br>ICH!</p></li>
-                           </ul>
-                       </li>
-                   <ul class="dropdown-menu scrollable-menu">
-                       <li id="allekompetenzen" onclick="alleKompetenzen()"><a href="#">ALLE KOMPETENZEN!</a></li>
-                       <li id="dasbinich" onclick="kompetenz(1)"><a href="#">DAS BIN ICH!</a></li>
-                       <li id="ichunddieanderen" onclick="kompetenz(2)"><a href="#">ICH UND DIE ANDEREN</a></li>
-                       <li id="dieweltummichherum" onclick="kompetenz(3)"><a href="#">DIE WELT UM MICH HERUM</a></li>
-                       <li id="ichwerdeselbststaendig" onclick="kompetenz(4)"><a href="#">ICH WERDE SELBSTSTÄNDIG</a></li>
-                       <li id="sichbewegen" onclick="kompetenz(5)"><a href="#">SICH BEWEGEN</a></li>
-                       <li id="lernen" onclick="kompetenz(6)"><a href="#">LERNEN</a></li>
-                       <li id="arbeiten" onclick="kompetenz(7)"><a href="#">ARBEITEN</a></li>
-                       <li id="gestaltenunderschaffen" onclick="kompetenz(8)"><a href="#">GESTALTEN UND ERSCHAFFEN</a></li>
-                       <li id="sprachen" onclick="kompetenz(9)"><a href="#">SPRECHEN</a></li>
-                       <li id="fremdsprache" onclick="kompetenz(10)"><a href="#">FREMDSPRACHE</a></li>
-                       <li id="lesen" onclick="kompetenz(11)"><a href="#">LESEN</a></li>
-                       <li id="schreiben" onclick="kompetenz(12)"><a href="#">SCHREIBEN</a></li>
-                       <li id="messen" onclick="kompetenz(13)"><a href="#">MESSEN</a></li>
-                       <li id="loesungenfinden" onclick="kompetenz(14)"><a href="#">LÖSUNGEN FINDEN</a></li>
-                       <li id="zaehlenundrechnen" onclick="kompetenz(15)"><a href="#">ZÄHLEN UND RECHNEN</a></li>
-                       <li class="lastListItem" id="formundraumentdecken" onclick="kompetenz(16)"><a href="#">FORM UND RAUM ENTDECKEN</a></li>
-                   </ul>
-               </ul>
-           </li>
-       </ul>
-
-       <div class="brand-centered navbar-header">
-         <a  class="navbar-brand"><img src="images/images-master/logo.png" alt="Logo">
-         </a>
-       </div>
        <!-- Dropdown-right -->
          <ul class="nav navbar-nav navbar-right">
            <li class="dropdown">
