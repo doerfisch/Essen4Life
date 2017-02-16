@@ -66,3 +66,17 @@ margin-left: -400px;
 #blackText{
   color: black;
 }
+
+/* Bilder-Zustandswechsel */
+
+.open .dropdown-toggle-achievedCompetences{
+    content: url("images/images-master/achievedCompetences-active.png")
+}
+
+.open .dropdown-toggle-help{
+    content: url("images/images-master/help-active.png")
+}
+
+.open .dropdown-toggle-logout{
+    content: url("images/images-master/logout-active.png")
+}
