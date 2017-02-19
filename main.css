@@ -101,7 +101,7 @@ margin-left: -400px;
 #upperNavbar{
   height: 60px;
 }
-.dropbtn {
+.dropbtnLeft {
     background-color:#001a3a;
     color: white;
     padding: 0px;
@@ -109,7 +109,17 @@ margin-left: -400px;
     border: none;
     cursor: pointer;
     margin-top: 12px;
-    margin-left: 10px;
+   margin-left: 10px;
+}
+.dropbtnRight {
+    background-color:#001a3a;
+    color: white;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+   margin-right: 10px;
 }
 .dropdown {
     position: relative;
@@ -121,13 +131,24 @@ margin-left: -400px;
     background-color: #001a3a;
     color: white !important;
     width: 250px;
-    font-size: 13pt;
+    font-size: 12pt;
   font-family: Franklin Gothic Heavy;
     z-index: 1;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 9px;
 }
 
 .dropdown-content a {
   color: white;
+  margin-left: 5px;
+
+}
+.dropdown-content li{
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -142,13 +163,30 @@ margin-left: 10px;
   margin-top: 12px;
 }
 #divide{
-  margin-top: 12px;
-  border-color: white;
+  margin-top: 14px;
+  border-color: #4565ad;
   border-style: solid;
-  border-width: 2px;
-  color: white;
+  border-width: 1px;
   height: 35px;
+  margin-right: 10px;
 }
+.menuPicture{
+  float: left;
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+
+}
+.menuHeader{
+  height: 125px;
+  margin-top: 10px;
+  color: #4565ad;
+}
+
+
+
+
 
 /*Hintergrundfarben vom Kapitel Menü*/
 #chap1{
