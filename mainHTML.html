@@ -21,8 +21,6 @@
 
 
       <!--DROPDOWNS-->
-
-
       <div id="navbarElements" class="navbar-collapse collapse">
         <!-- Dropdown-left -->
           <ul class="nav navbar-nav navbar-left">
@@ -97,109 +95,102 @@
                 </div>
               </ul>
 
-
+<!-- CHECK! Logo -->
 <img id ="logo" src="images/images-master/logo.png">
 
        <!-- Dropdown-right -->
+
+       <ul class="nav navbar-nav navbar-right">
+                  <div class="dropdown">
+                     <li id="btn8" class="dropbtn"> <img src="images/images-master/logout-iactive.png"></li>
+                     <div class = "dropdown-content">
+                     <li>
+                       <li><img src="images/images-master/logout-iactive.png"></li>
+                       <li>MÖCHTEST DU <br> CHECK! <br> VERLASSEN?</li>
+                     </li>
+                     <li><a href="index.html">JA</a></li>
+                     <li class="lastListItem"><a href="#">NEIN</a></li>
+                  </div>
+                </div>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                 <div class="dropdown">
+                    <li id= "btn7" class = "dropbtn"> <img src="images/images-master/help-inactive.png"></li>
+                    <div class= "dropdown-content">
+                      <li>
+                      <li><img src="images/images-master/help-inactive.png"></li>
+                    <li> BRAUCHST <br> DU HILFE?</li>
+                 </li>
+                             <li><a href="http://www.check-lehrerzimmer.com/hilfe/erste-schritte/">SO GEHT'S!</a></li>
+                             <li><a href="http://www.check-lehrerzimmer.com/tutorial/">VIDEO-TUTORIALS</a></li>
+                             <li><a href="http://www.check-lehrerzimmer.com/faq/">HÄUFIG GESTELLTE FRAGEN</a></li>
+                             <li><a href="http://www.check-lehrerzimmer.com/contact/">KONTAKT</a></li>
+                           </div>
+                           </div>
+                     </ul>
+<ul class="nav navbar-nav navbar-right">
+<div id="divide"></div>
+</ul>
+
+                     <ul class="nav navbar-nav navbar-right">
+                             <div class="dropdown">
+                              <li id="btn6" class="dropbtn"> <img  id="classPicture"src="images/images-master/studyGroup/studyGroup_1a_inactive.png"></li>
+                                <div class = "dropdown-content">
+                                  <li><img src="images/images-master/studyGroup/studyGroup_1a_inactive.png"></li>
+                                  <li>KLASSE</li>
+                                  <li>2B</li>
+                                  <li>KLASSENLEHRER*IN</li>
+                                  <li>VORNAME NACHNAME</li>
+                                </div>
+                             </div>
+                           </ul>
+
+
+
+                           <ul class="nav navbar-nav navbar-right">
+                                   <div class="dropdown">
+                                    <li id="btn5">  <img src="images/images-master/school/school-inactive.png"></li>
+                                      <div class="dropdown-content">
+                                                       <li><img id="schoolPicture" src="images/images-master/school/school-inactive.png" alt="Schulavatar"></li>
+                                                       <li>STRASSE NUMMER</li>
+                                           <li>PLZ ORT</li>
+                                           <li>LAND</li>
+                                           <li></li>
+                                           <li>EMAIL</li>
+                                           <li>TELEFON</li>
+                                   </div>
+                        </div>
+                        </ul>
+       <!-- HIER IST EIN BESTIMMTES PROFILBILD ALS PLATZHALTER-->
          <ul class="nav navbar-nav navbar-right">
-           <li class="dropdown">
-               <div data-toggle="dropdown">
-               <img id="profilePic" src="" class="dropdown-toggle-profil">
-               <p class="burgerMenuPicture" id="mobileName"></p>
-               </div>
-               <ul class="dropdown-menu rightDrop">
-                   <li class="firstlistitem firstDropRight" id="dropdownInfosFirst" >
-                           <ul class="nav navbar-nav navbar-left">
-                               <li><img id="nameImg" src="" alt="#"></li>
-                               <li id="name" class="deleteProfile"></li>
-                           </ul>
-                       </li>
-                    <ul class="dropdown-menu scrollable-menu dropdownBLAU">
+           <div class="dropdown">
+               <li id="btn4" class = "dorpbtn"><img src="images/images-master/student/superhero-batman-inactive.png"></li>
+               <div class="dropdown-content">
+                <li>
+                  <li><img src="images/images-master/student/superhero-batman-inactive.png"></li>
+                  <li>VORNAME</li>
+                  <li>NACHNAME</li>
+                  <li>DATUM</li>
+                  </li>
+                       <li><a herf="#">MEIN PROFILBILD ÄNDERN</a></li>
+                       <li><a herf="#">MEIN PASSWORT ANDERN</a></li>
+                       <li><a herf="#">MEIN PROFIL LÖSCHEN</a></li>
+           </div>
+           </div>
+         </ul>
 
-                       <li><a onclick="changeProfilePicture()">MEIN PROFILBILD ÄNDERN</a></li>
-                       <li><a onclick="changePassword()">MEIN PASSWORT ANDERN</a></li>
-                       <li class="lastListItem"><a onclick="deleteProfile()">MEIN PROFIL LÖSCHEN</a></li>
-                   </ul>
-               </ul>
-           </li>
-           <li class="dropdown">
-               <div data-toggle="dropdown">
-               <img src="images/images-master/school/school-inactive.png" class="dropdown-toggle-school">
-               <p class="burgerMenuPicture" id="mobileSchool">Schule</p>
-               </div>
-               <ul class="dropdown-menu rightDrop">
-                   <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
-                       <ul class="nav navbar-nav navbar-left">
-                               <li><img id="schoolPicture" src="" alt="Schulavatar"></li>
-                               <li id="schoolName" class="dropdownSpace"></li>
-                   </ul>
-                   </li>
 
-                       <li id="dropdownInfos"></li>
-                       <li class="lastListItem" id="dropdownInfosLast"><br></li>
 
-               </ul>
-           </li>
-           <li class="dropdown">
-               <div data-toggle="dropdown">
-               <img  id="classPicture"src="" class="dropdown-toggle-studyGroup">
-               <p class="burgerMenuPicture" id="mobileClass">Klasse</p>
-               </div>
-               <ul class="dropdown-menu rightDrop">
-                    <li class="firstlistitem firstDropRight" id="dropdownInfosFirst">
-                       <ul class="nav navbar-nav navbar-left">
-                               <li><img id="klassePicBig" src="" alt=""></li>
-                               <li id="klasseName" class="dropdownSpace"></li>
-                   </ul>
-                   </li>
 
-                   <li id="dropdownInfos">KLASSENLEHRER*IN</li>
-                   <li class="lastListItem" id="dropdownInfosLastName"></li>
-               </ul>
-           </li>
+
+
            <!-- Strich -->
-           <li><hr id="trennbalken" noshade></li>
-           <li class="dropdown">
-               <div data-toggle="dropdown">
-               <img src="images/images-master/help-inactive.png" class="dropdown-toggle-help">
-               <p class="burgerMenuPicture">Brauchst du hilfe?</p>
-               </div>
-               <ul class="dropdown-menu rightDrop">
-                   <li class="firstlistitem firstDropRight" >
-                           <ul class="nav navbar-nav navbar-left">
-                               <li><img src="images/images-master/help-big.png" alt="#"></li>
-                               <li class="dropdownSpace"><p>BRAUCHST<br>DU HILFE?</p></li>
-                           </ul>
-                       </li>
-                    <ul class="dropdown-menu scrollable-menu dropdownBLAU">
-                       <li><a href="http://www.check-lehrerzimmer.com/hilfe/erste-schritte/">SO GEHT'S!</a></li>
-                       <li><a href="http://www.check-lehrerzimmer.com/tutorial/">VIDEO-TUTORIALS</a></li>
-                       <li><a href="http://www.check-lehrerzimmer.com/faq/">HÄUFIG GESTELLTE FRAGEN</a></li>
-                       <li class="lastListItem"><a href="http://www.check-lehrerzimmer.com/contact/">KONTAKT</a></li>
-                   </ul>
-               </ul>
-           </li>
-           <li class="dropdown">
-               <div data-toggle="dropdown">
-               <img src="images/images-master/logout-iactive.png" class="dropdown-toggle-logout">
-               <p class="burgerMenuPicture">Möchtest du CHECK! verlassen?</p>
-               </div>
-               <ul class="dropdown-menu rightDrop">
-                   <li class="firstlistitem firstDropRight" >
-                           <ul class="nav navbar-nav navbar-left">
-                               <li><img src="images/images-master/logout-big.png" alt="#"></li>
-                               <li class="dropdownSpace"><p>MÖCHTEST DU<br>CHECK!<br>VERLASSEN?</p></li>
-                           </ul>
-                       </li>
-                    <ul class="dropdown-menu scrollable-menu dropdownBLAU">
-                       <li><a href="index.html">JA</a></li>
-                       <li class="lastListItem"><a href="#">NEIN</a></li>
-                   </ul>
-               </ul>
-           </li>
-       </ul>
-     </div>
- </div>
+
+
+
+
+
 </nav>
 
 <div id="error">

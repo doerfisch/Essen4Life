@@ -98,6 +98,9 @@ margin-left: -400px;
   background-color: #001a3a;
   padding-top: 5px;
 }
+#upperNavbar{
+  height: 60px;
+}
 .dropbtn {
     background-color:#001a3a;
     color: white;
@@ -132,13 +135,21 @@ margin-left: -400px;
 #btn1{
   margin-top: 12px;
   margin-left: 5px;
-
 }
 
 #btn3{
 margin-left: 10px;
   margin-top: 12px;
 }
+#divide{
+  margin-top: 12px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  height: 35px;
+}
+
 /*Hintergrundfarben vom Kapitel Menü*/
 #chap1{
   background-color: #79ab2e;
@@ -289,7 +300,7 @@ margin-left: 10px;
 #logo{
   position: absolute;
     left: 50%;
-    margin-left: -50px !important;  
+    margin-left: -50px !important;
     display: block;
     margin-top: 12px;
 }
