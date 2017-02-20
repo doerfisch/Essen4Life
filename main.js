@@ -4,3 +4,6 @@ function passwordÄndern() {
 function profilbildÄndern(){
   $('#content').load('content.html #profilepic-change-body');
 }
+function profilLöschen(){
+  $('#content').load('content.html #delete-profile-body');
+}
