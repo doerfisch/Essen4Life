@@ -8,7 +8,9 @@ function loginButton(){ /* Nur wenn Email (muss das wirklich ne Email sein?) und
             "url" : "http://46.101.204.215:1337/api/V1/login",
             "method" : "PUT",
             "data" : loginData,
-            processData: false
+            "processData": false,
+            "contentType": false,
+            "mimeType": "multipart/form-data"
         };
 
         $.ajax(api).done(function (token) {
