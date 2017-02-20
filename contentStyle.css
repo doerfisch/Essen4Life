@@ -1,0 +1,58 @@
+body{
+    background:white;
+}
+#password-change-body{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#password-change-Image{
+  width: 70px;
+  height: 70px;
+  margin-top: 40px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+#password-change-headline{
+  text-align: center;
+}
+.password-change-block{
+  margin-right: 10px;
+
+}
+.password-change-input{
+
+  height: 40px;
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#password-change-input1{
+  float: right;
+  width: 300px;
+  margin-left: 10px;
+  height: 40px;
+}
+#password-change-input2{
+  float: right;
+  width: 300px;
+  margin-left: 10px;
+  height: 40px;
+}
+#password-change-input3{
+  float: right;
+  width: 300px;
+  margin-left: 10px;
+  height: 40px;
+}
+.password-change-text{
+
+}
+.absatz{
+  margin-top: 10px;
+}
+#password-change-block{
+  margin-top: 12px;
+}

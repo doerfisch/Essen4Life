@@ -1,6 +1,13 @@
 body {
     background:white;
 }
+#content{
+  margin-top: 60px;
+    margin-bottom: 50px;
+      left: 0;
+      right: 0;
+  overflow: auto;
+}
 #headerImageLogin{
   display: table;
   margin-left: auto;

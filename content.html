@@ -1,11 +1,21 @@
 <html>
 <head>
+
 </head>
 <body>
 
     <!-- Hier kommt alles rein was geändert werden kann, Abgleich der IDs notwendig  -->
-<div class="divSwitch" id ="passwortAendern">
-<p>HUHU</p>
+<div  id ="password-change-body">
+  <link rel="stylesheet" href="contentStyle.css">
+  <img id="password-change-Image" src="images/images-master/change-password.png">
+  <div id="password-change-headline">PASSWORT ÄNDERN</div>
+<div id=password-change-block>
+<div class="absatz">  <class ="password-change-text">AKTUELLES PASSWORT* </><input id="password-change-input1" type="password" class="form-control loginData" required min=7></div>
+<div class="absatz">  <class="password-change-text">NEUES PASSWORT*</>><input id="password-change-input2" type="password" class="form-control loginData" required min=7></div>
+<div class="absatz">  <class="password-change-text">PASSWORT BESTÄTIGUNG*</><input id="password-change-input3" type="password" class="form-control loginData" required min=7></div>
+  </div>
+  <button id="password-change-button">ÄNDERN</button>
+
 </div>
 
     <div id="errorEsc">
