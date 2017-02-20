@@ -56,3 +56,32 @@ body{
 #password-change-block{
   margin-top: 12px;
 }
+#aktuellesProfilbild{
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+#profilepic-change-headline{
+  text-align: center;
+}
+#profilepic-change-buttons{
+  display: inline;
+text-align: center;
+}
+#profilepic-change-images{
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+#ersteZeile{
+  margin-top: 20px;
+}
+#zweiteZeile{
+  margin-top: 10px;
+}
+#dritteZeile{
+  margin-top: 10px;
+}
+#vierteZeile{
+  margin-top: 10px;
+}
