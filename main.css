@@ -412,3 +412,17 @@ margin-left: 10px;
   text-align: left;
   display: inline-block;
 }
+
+#abbrechenBtn {
+    background-color: #8da6d6;
+    color:#4565ad;
+    width: 150px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+#deleteBtn{
+    margin-right: 10px;
+    margin-top: 10px;
+     float: right;
+}
