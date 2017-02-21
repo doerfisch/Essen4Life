@@ -124,7 +124,7 @@ $(document).ready(function() {
 
 function switchChapter(id){
     switch(id){
-        case 0:
+        case 0:chapter0(); break;
         case 1:chapter1(); break;
         case 2:chapter2(); break;
         case 3:chapter3(); break;
