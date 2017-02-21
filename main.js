@@ -4,12 +4,15 @@ var student = {};
 var avatare = [];
 
 function passwordÄndern() {
+  document.body.style.backgroundColor = "white";
   $('#content').load('content.html #password-change-body');
 }
 function profilbildÄndern(){
+  document.body.style.backgroundColor = "white";
   $('#content').load('content.html #profilepic-change-body');
 }
 function profilLöschen(){
+  document.body.style.backgroundColor = "white";
   $('#content').load('content.html #delete-profile-body');
 }
 

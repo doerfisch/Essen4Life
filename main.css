@@ -1,6 +1,7 @@
 body {
     background:white;
 }
+
 #content{
   margin-top: 60px;
     margin-bottom: 50px;
@@ -8,29 +9,34 @@ body {
       right: 0;
   overflow: auto;
 }
+
 #headerImageLogin{
   display: table;
   margin-left: auto;
   margin-right: auto;
 
 }
+
 #loginBody {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
+
 #inputFields {
   height: 40px;
   width:300px;
   margin-left: auto;
   margin-right: auto;
 }
+
 #email{
   font-family: Roboto Thin;
   margin: 5px auto;
-  font-size: 13 pt;
+  font-size: 13px;
   color: #001a3a;
 }
+
 #password{
   font-family: Roboto Thin;
   margin: 5px auto;
@@ -38,7 +44,7 @@ body {
   color: #001a3a;
 }
 
-#loginButton {
+#'login'Button {
     width: 150px;
     height: 40px;
     background-color: #001a3a;
@@ -49,11 +55,13 @@ body {
     font-family: Roboto Thin;
 
 }
+
 .footerImage{
   display: table;
   margin-left: auto;
   margin-right: auto;
 }
+
 #footerLogin {
   color:#8da6d6;
   padding: 5px;
@@ -66,9 +74,11 @@ left: 50%;
 z-index: 1;
 margin-left: -400px;
 }
+
 #footerLogin a{
   color:#8da6d6;
 }
+
 #blackTextLogin{
   color: black;
 }
@@ -105,9 +115,11 @@ margin-left: -400px;
   background-color: #001a3a;
   padding-top: 5px;
 }
+
 #upperNavbar{
   height: 60px;
 }
+
 .dropbtnLeft {
     background-color:#001a3a;
     color: white;
@@ -118,6 +130,7 @@ margin-left: -400px;
     margin-top: 12px;
    margin-left: 10px;
 }
+
 .dropbtnRight {
     background-color:#001a3a;
     color: white;
@@ -131,10 +144,12 @@ margin-left: -400px;
     margin-right: 10px;
 
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-contentLeft{
     display: none;
     position: absolute;
@@ -382,10 +397,18 @@ margin-left: 10px;
 #chap16:hover{
   background-color: #658bc8;
 }
+
 #logo{
   position: absolute;
     left: 50%;
     margin-left: -50px !important;
     display: block;
     margin-top: 12px;
+}
+
+#mainContent{
+  padding-bottom: 80px;
+  margin-top: 80px;
+  text-align: left;
+  display: inline-block;
 }
