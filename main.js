@@ -29,16 +29,13 @@ function getUserInfo(){
         "headers": {
             "authorization":""}}
 
-    //ändere den token in studentJSON und avatareJSON
     getStudentInfo.headers.authorization = token.token;
     getAvatarInfo.headers.authorization = token.token;
 
-    //Befehl um student zu bekommen
     $.ajax(getStudentInfo).done(function (response) {
     student=response;
     });
 
-    //Befehl um avatare zu bekommen
     $.ajax(getAvatarInfo).done(function (response) {
     avatare=response;
     });
