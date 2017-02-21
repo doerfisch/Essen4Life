@@ -48,13 +48,13 @@ function getUserInfo(){
     });
 }
 
-<!--Seite nimmt Hoverfarbe an, wenn man draufklickt-->
+/*Seite nimmt Hoverfarbe an, wenn man draufklickt*/
 function chapter0(){
-    document.body.style.backgroundColor = "#001a3a";
+  document.body.style.backgroundColor = "#001a3a";
     $('#content').load('content.html #chapter0');
 }
 function chapter1(){
-    document.body.style.backgroundColor = "#a1c153";
+   document.body.style.backgroundColor = "#a1c153";
     $('#content').load('content.html #chapter1');
 }
 function chapter2(){
