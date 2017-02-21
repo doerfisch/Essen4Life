@@ -3,6 +3,7 @@ var token = JSON.parse(tokenS);
 var student = {};
 var avatare = [];
 
+
 function passwordÄndern() {
   document.body.style.backgroundColor = "white";
   $('#content').load('content.html #password-change-body');
@@ -14,6 +15,10 @@ function profilbildÄndern(){
     $(document).ready(function() {
         <!--hier wird das Profilbild geändert-->
     }); });
+}
+function abbrechen(){
+  document.body.style.backgroundColor = "white";
+  $('#content').load('mainHTML.html #content');
 }
 function profilLöschen(){
   document.body.style.backgroundColor = "white";
