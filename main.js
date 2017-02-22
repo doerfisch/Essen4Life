@@ -215,15 +215,59 @@ function switchChapter(id){
    var  kompetenz={};
     $.ajax(kompetenzJSON).then(function setKompetenz (response) {
         kompetenz=response;
+        console.log(kompetenz);
+        kompetenzenAnzeigen();
     });
+    function kompetenzenAnzeigen() {
+        var kompetenzen = "";
+        for (i = 0; i < kompetenz.length; i++) {
+            console.log(kompetenz[i].number);
 
-    // Hier müssen die Bubbles der Kompetenzen gesetzt werden
-    // einmal durch iterieren und entsprechende Bubbles für die Kompetenzen setzen (Inhalt, checked flag)
+            // Logik aktuell noch fehlerbehaftet
+            kompetenzen += "<div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
+            if (kompetenz[i].checked = true) {
+                if (id < 10) {
+                    kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                }
+                else {
+                    kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                }
+            }
+            else {
+                if (id < 10) {
+                kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
+            }
+            else {kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
 
-    $(document).ready(function refreshBubbles(){
-   $('#middleContent').html(bubbles);
-        hoverBubbles();
-});
+                }
+            }
+
+             kompetenzen+=kompetenz[i].studentText+"</p></div>"
+             if(kompetenz[i].number<1000){
+             if(kompetenz[i].number<100){
+             if(kompetenz[i].number<10){
+             numberID="000"+kompetenz[i].number;
+             }else{
+             numberID="00"+kompetenz[i].number;
+             }
+             }else{
+             numberID="0"+kompetenz[i].number;
+             }
+             }else{
+             numberID=kompetenz[i].number;
+             }
+             kompetenzen+="<div id=\"compID\"><p>"+kompetenz[i].chapterId+"."+numberID+"</p></div></div>"
+
+
+        }
+        // Hier müssen die Bubbles der Kompetenzen gesetzt werden
+        // einmal durch iterieren und entsprechende Bubbles für die Kompetenzen setzen (Inhalt, checked flag)
+
+        $(document).ready(function refreshBubbles() {
+            $('#mainContent').html(kompetenzen);
+            hoverBubbles();
+        });
+    }
 }
 
 function hoverBubbles(){
