@@ -29,17 +29,15 @@ function getUserInfo(){
     //UserInfo in JSON Modell schreiben
 
     var getStudentInfo = {
-        "async": true,
-        "crossDomain": true,
+        "async": false,
         "url": "http://46.101.204.215:1337/api/V1/student",
         "method": "GET",
         "headers": {
             "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGhlbyJ9.rr1Kxlsfd175ZAgBFanS1fS3B_cj6_tqbjntxFRU4dA",
-            "cache-control": "no-cache",
         }
     }
 
-    getStudentInfo.headers.Authorization = token;
+    getStudentInfo.headers.authorization = token.token;
 
     $.ajax(getStudentInfo).then(function (response) {
         console.log(response);
@@ -48,17 +46,15 @@ function getUserInfo(){
 
 
     var getAvatarInfo = {
-        "async": true,
-        "crossDomain": true,
+        "async": false,
         "url": "http://46.101.204.215:1337/api/V1/avatar",
         "method": "GET",
         "headers": {
             "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGhlbyJ9.rr1Kxlsfd175ZAgBFanS1fS3B_cj6_tqbjntxFRU4dA",
-            "cache-control": "no-cache",
         }
     }
 
-    getAvatarInfo.headers.Authorization = token.token;
+    getAvatarInfo.headers.authorization = token.token;
 
     $.ajax(getAvatarInfo).then(function (response) {
         console.log(response);
