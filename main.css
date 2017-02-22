@@ -240,6 +240,30 @@ margin-left: 10px;
   margin-left: 10px;
 
 }
+.schoolPicture{
+  float: left;
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+}
+
+.classPicture{
+  float: left;
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+}
+
+.avatarPicture{
+  float: left;
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+}
+
 .menuHeader{
   height: 125px;
   margin-top: 10px;
@@ -453,6 +477,7 @@ margin-left: 10px;
 ::-webkit-scrollbar {
     display: none;
 }
+
 #btn1{
   display: block;
   height: 40px;
@@ -477,8 +502,6 @@ margin-left: 10px;
   width: 40px;
   background-image: url("images/images-master/educationalPlan-active.png");
 }
-
-
 #btn3{
   display: block;
   height: 40px;

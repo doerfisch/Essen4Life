@@ -13,7 +13,7 @@ function profilbildÄndern(){
   $('#content').load('content.html #profilepic-change-body');
   $(document).ready(function() {
     $(document).ready(function() {
-        <!--hier wird das Profilbild geändert-->
+         $("#profilePicChange").attr("src",avatare[student.avatarId].avatarBigUrl);
     }); });
 }
 function abbrechen(){
