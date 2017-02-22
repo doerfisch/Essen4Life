@@ -4,11 +4,11 @@ var student = {};
 var avatare = [];
 
 
-function passwordÄndern() {
+function changePassword() {
   document.body.style.backgroundColor = "white";
   $('#content').load('content.html #password-change-body');
 }
-function profilbildÄndern(){
+function changeAvatarPicture(){
   document.body.style.backgroundColor = "white";
   $('#content').load('content.html #profilepic-change-body');
   $(document).ready(function() {
@@ -16,15 +16,16 @@ function profilbildÄndern(){
          $("#profilePicChange").attr("src",avatare[student.avatarId].avatarBigUrl);
     }); });
 }
-function abbrechen(){
-  document.body.style.backgroundColor = "white";
-  $('#content').load('mainHTML.html #content');
-}
-function profilLöschen(){
+
+function deleteProfile(){
   document.body.style.backgroundColor = "white";
   $('#content').load('content.html #delete-profile-body');
 }
 
+function abbrechen(){
+  document.body.style.backgroundColor = "white";
+  $('#content').load('mainHTML.html #content');
+}
 function getUserInfo(){
     //UserInfo in JSON Modell schreiben
 
