@@ -13,7 +13,7 @@ function changeAvatarPicture(){
   $('#content').load('content.html #profilepic-change-body');
   $(document).ready(function() {
     $(document).ready(function() {
-         $("#profilePicChange").attr("src",avatare[student.avatarId].avatarBigUrl);
+         $("#profilePicChang").attr("src",avatare[student.avatarId].avatarBigUrl);
     }); });
 }
 
@@ -112,71 +112,71 @@ function saveNewAvatar(){
 
 /*Seite nimmt Hoverfarbe an, wenn man draufklickt*/
 function chapter0(){
-  document.body.style.backgroundColor = "#001a3a";
+  document.body.style.backgroundColor = "#8da6d6";
     $('#content').load('content.html #chapter0');
 }
 function chapter1(){
-   document.body.style.backgroundColor = "#79ab2e";
+   document.body.style.backgroundColor = "#a1c153";
     $('#content').load('content.html #chapter1');
 }
 function chapter2(){
-    document.body.style.backgroundColor = "#c6d54f";
+    document.body.style.backgroundColor = "#dbe283";
     $('#content').load('content.html #chapter2');
 }
 function chapter3(){
-    document.body.style.backgroundColor = "#94c122";
+    document.body.style.backgroundColor = "#bad151";
     $('#content').load('content.html #chapter3');
 }
 function chapter4(){
-    document.body.style.backgroundColor = "#44b284";
+    document.body.style.backgroundColor = "#7cc3a3";
     $('#content').load('content.html #chapter4');
 }
 function chapter5(){
-    document.body.style.backgroundColor = "#ffdd00";
+    document.body.style.backgroundColor = "#ffea64";
     $('#content').load('content.html #chapter5');
 }
 function chapter6(){
-    document.body.style.backgroundColor = "#ffed98";
+    document.body.style.backgroundColor = "#fff3d8";
     $('#content').load('content.html #chapter6');
 }
 function chapter7(){
-    document.body.style.backgroundColor = "#fbb900";
+    document.body.style.backgroundColor = "#ffcf53";
     $('#content').load('content.html #chapter7');
 }
 function chapter8(){
-    document.body.style.backgroundColor = "#ef7d25";
+    document.body.style.backgroundColor = "#f5a04c";
     $('#content').load('content.html #chapter8');
 }
 function chapter9(){
-    document.body.style.backgroundColor = "#d60d66";
+    document.body.style.backgroundColor = "#e35184";
     $('#content').load('content.html #chapter9');
 }
 function chapter10(){
-    document.body.style.backgroundColor = "#ea518d";
+    document.body.style.backgroundColor = "#ee7ba9";
     $('#content').load('content.html #chapter10');
 }
 function chapter11(){
-    document.body.style.backgroundColor = "#f29db7";
+    document.body.style.backgroundColor = "#f7bed2";
     $('#content').load('content.html #chapter11');
 }
 function chapter12(){
-    document.body.style.backgroundColor = "#a62068";
+    document.body.style.backgroundColor = "#c9427e";
     $('#content').load('content.html #chapter12');
 }
 function chapter13(){
-    document.body.style.backgroundColor = "#008fc8";
+    document.body.style.backgroundColor = "#4fa8da";
     $('#content').load('content.html #chapter13');
 }
 function chapter14(){
-    document.body.style.backgroundColor = "#62c2d0";
+    document.body.style.backgroundColor = "#94d3e5";
     $('#content').load('content.html #chapter14');
 }
 function chapter15(){
-    document.body.style.backgroundColor = "#004077";
+    document.body.style.backgroundColor = "#005daa";
     $('#content').load('content.html #chapter15');
 }
 function chapter16(){
-    document.body.style.backgroundColor = "#3873b9";
+    document.body.style.backgroundColor = "#658bc8";
     $('#content').load('content.html #chapter16');
 }
 
@@ -236,4 +236,3 @@ function hoverBubbles(){
         }
     );
 }
-
