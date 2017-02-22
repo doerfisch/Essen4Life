@@ -2,7 +2,7 @@ body{
     background:white;
 }
 #password-change-body{
-  width: 500px;
+  width: 550px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,6 +17,7 @@ body{
 #password-change-headline{
   text-align: center;
 }
+
 #password-change-input1{
   float: right;
   width: 300px;
@@ -36,13 +37,27 @@ body{
   margin-left: 10px;
   height: 40px;
 }
+#password-change-button{
+  width: 150px;
+  height: 40px;
+  color: white;
+  background-color: #001a3a;
+  border-radius: 5px;
 
-.absatz{
-  margin-top: 10px;
 }
-#password-change-block{
-  margin-right: 10px;
-  margin-top: 12px;
+.fixfloat {
+border:none;
+clear:both;
+display:block;
+float:none;
+font-size:0;
+height:0;
+line-height:0
+}
+
+#password-change-block lable{
+display: block;
+width: 300px;
 }
 #aktuellesProfilbild{
   margin-left: auto;
@@ -122,21 +137,27 @@ body{
 }
 
 #passw{
-  float: right;
+
   width: 300px;
   margin-left: 10px;
   height: 40px;
+  float:right;
 }
 #delete-profile-text{
   margin-right: 10px;
   margin-top: 5px;
+  display: inline;
 }
+
+
 #deletebtn{
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 150px;
   height: 40px;
+  background-color: #001a3a;
+  color: white;
 
 }
 .illustrationLeft{
@@ -170,7 +191,7 @@ height:430px;
   float:right;
 
 }
-#error{
+#errorLogin{
       background-color: #b71967;
       height: 200px;
       width: 300px;

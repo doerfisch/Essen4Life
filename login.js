@@ -18,7 +18,7 @@ function loginButton(){ /* Nur wenn Email (muss das wirklich ne Email sein?) und
             localStorage.setItem('token', token);
         })
             .fail(function errorCallback(){
-                $('#error').load('content.html #errorLogin');
+                $('#errorLogin1').load('content.html #errorLogin');
                 // Wartet auf "ready" des DocObjectModel
                 $(document).ready(function loginError(){
                     $('#errorText').html("Benutzername oder Passwort falsch!");
