@@ -70,6 +70,26 @@ function changeAvatar(newAvatar){
     $("#profilePicChange").attr("src",avatare[newAvatar].avatarBigUrl);
 }
 
+
+function saveNewAvatar(){
+    var avatarJSON = {
+        "async": false,
+        "url": "",
+        "method": "PUT",
+        "headers": {
+            "authorization":""}}
+    avatarJSON.headers.authorization = token.token;
+    avatarJSON.url = "http://46.101.214.215:1337/api/V1/avatar/"+avatarChange;
+   (avatarJSON).done(function (response) {
+        if(response.message ="Avatar wurde erfolgreich geändert"){
+                loginButton();
+                $(document).ready(function(){
+                    $('#errorText').load('ChangeBody.html #errorText');
+                });
+        }
+    });
+};
+
 /*Seite nimmt Hoverfarbe an, wenn man draufklickt*/
 function chapter0(){
   document.body.style.backgroundColor = "#001a3a";
