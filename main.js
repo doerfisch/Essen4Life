@@ -64,6 +64,12 @@ function getUserInfo(){
 
 }
 
+var currentAvatar=avatare[student.avatarId];
+function changeAvatar(newAvatar){
+    avatarChange=newAvatar;
+    $("#profilePicChange").attr("src",avatare[newAvatar].avatarBigUrl);
+}
+
 /*Seite nimmt Hoverfarbe an, wenn man draufklickt*/
 function chapter0(){
   document.body.style.backgroundColor = "#001a3a";
