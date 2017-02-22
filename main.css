@@ -452,3 +452,102 @@ margin-left: 10px;
 }
 ::-webkit-scrollbar {
     display: none;
+}
+#btn1{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/chapterOverview-inactive.png");
+}
+#btn1:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/chapterOverview-active.png");
+}
+#btn2{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/educationalPlan-inactive.png");
+}
+#btn2:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/educationalPlan-active.png");
+}
+
+
+#btn3{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/achievedCompetences-inactive.png");
+}
+#btn3:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/achievedCompetences-active.png");
+}
+#btn8{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/logout-iactive.png");
+}
+#btn8:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/logout-active.png");
+}
+#btn7{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/help-inactive.png");
+}
+#btn7:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/help-active.png");
+}
+#btn6{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/studyGroup/studyGroup_1a_inactive.png");
+}
+#btn6:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/studyGroup/studyGroup_1a_active.png");
+}
+#btn5{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/school/school-inactive.png");
+}
+#btn5:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/school/school-green-active.png");
+}
+#btn4{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/student/superhero-batman-inactive.png");
+}
+#btn4:hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-image: url("images/images-master/student/superhero-batman-active.png");
+}
