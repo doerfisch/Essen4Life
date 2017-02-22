@@ -13,14 +13,14 @@ function loginButton(){ /* Nur wenn Email (muss das wirklich ne Email sein?) und
             "mimeType": "multipart/form-data"
         };
 
-        $.ajax(api).then(function (token) {
+        $.ajax(api).then(function successCallback (token) {
             window.document.location.href = "mainHTML.html";
             localStorage.setItem('token', token);
         })
-            .fail(function(){
+            .fail(function errorCallback(){
                 $('#error').load('content.html #errorLogin');
                 // Wartet auf "ready" des DocObjectModel
-                $(document).ready(function(){
+                $(document).ready(function loginError(){
                     $('#errorText').html("Benutzername oder Passwort falsch!");
                 })
             })

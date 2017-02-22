@@ -27,32 +27,44 @@ function profilLöschen(){
 
 function getUserInfo(){
     //UserInfo in JSON Modell schreiben
+
     var getStudentInfo = {
-        "async": false,
-        "url": "http://46.101.214.215:1337/api/V1/student",
+        "async": true,
+        "crossDomain": true,
+        "url": "http://46.101.204.215:1337/api/V1/student",
         "method": "GET",
-        "body": null,
         "headers": {
-            "authorization":""}}
+            "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGhlbyJ9.rr1Kxlsfd175ZAgBFanS1fS3B_cj6_tqbjntxFRU4dA",
+            "cache-control": "no-cache",
+        }
+    }
 
-    var getAvatarInfo = {
-        "async": false,
-        "url": "http://46.101.214.215:1337/api/V1/avatar",
-        "method": "GET",
-        "body": null,
-        "headers": {
-            "authorization":""}}
-
-    getStudentInfo.headers.authorization = token;
-    getAvatarInfo.headers.authorization = token;
+    getStudentInfo.headers.Authorization = token;
 
     $.ajax(getStudentInfo).then(function (response) {
-    student=response;
+        console.log(response);
+        student = response;
     });
 
+
+    var getAvatarInfo = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://46.101.204.215:1337/api/V1/avatar",
+        "method": "GET",
+        "headers": {
+            "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGhlbyJ9.rr1Kxlsfd175ZAgBFanS1fS3B_cj6_tqbjntxFRU4dA",
+            "cache-control": "no-cache",
+        }
+    }
+
+    getAvatarInfo.headers.Authorization = token.token;
+
     $.ajax(getAvatarInfo).then(function (response) {
-    avatare=response;
+        console.log(response);
+        avatare = response;
     });
+
 }
 
 /*Seite nimmt Hoverfarbe an, wenn man draufklickt*/
@@ -125,9 +137,7 @@ function chapter16(){
     $('#content').load('content.html #chapter16');
 }
 
-$(document).ready(function() {
-  getUserInfo();
-});
+$(document).ready(getUserInfo());
 
 function switchChapter(id){
     switch(id){
@@ -161,7 +171,7 @@ scrollTop();
      kompetenzJSON.headers.authorization = token;
      kompetenzJSON.url = "http://46.101.214.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
    var  kompetenz={};
-    $.ajax(kompetenzJSON).then(function (response) {
+    $.ajax(kompetenzJSON).then(function setKompetenz (response) {
         kompetenz=response;
     });
 
@@ -182,7 +192,7 @@ scrollTop();
         }
      var bubbles = bubblesDone+bubblesEducation+bubblesUndone;
 
-    $(document).ready(function(){
+    $(document).ready(function refreshBubbles(){
    $('#middleContent').html(bubbles);
         hoverBubbles();
 });
