@@ -37,6 +37,18 @@ body {
     display: none;
 }
 
+.bubbles{
+    background-image: url("images/images-master/contentTextBubble.png");
+    background-repeat:no-repeat;
+    width: 370px;
+}
+#bubblesContent{
+    width: 340px;
+    height: 130px;
+    padding: 10px;
+    position: relative;
+}
+
 #email{
   font-family: Roboto Thin;
   margin: 5px auto;
