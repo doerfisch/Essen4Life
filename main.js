@@ -22,6 +22,26 @@ function deleteProfile(){
   $('#content').load('content.html #delete-profile-body');
 }
 
+function deleteProfileCall(){
+
+    /*Da Fehlerhafte API, wird das Passwort nicht abgefragt*/
+    var deleteCall = {
+        "async": false,
+        "url": "http://46.101.204.215:1337/api/V1/student",
+        "methode": "DELETE",
+        "headers": {
+            "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGhlbyJ9.rr1Kxlsfd175ZAgBFanS1fS3B_cj6_tqbjntxFRU4dA",
+        },
+    }
+    deleteCall.headers.authorization = token.token;
+
+    $.ajax(deleteCall).then(function successCallback (token) {
+        // Hier sollte noch eine Nachricht geworfen werden
+        window.document.location.href = "index.html";
+        localStorage.clear();
+    })
+}
+
 function abbrechen(){
   document.body.style.backgroundColor = "white";
   $('#content').load('mainHTML.html #content');
