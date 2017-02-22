@@ -224,13 +224,13 @@ function switchChapter(id){
             console.log(kompetenz[i].number);
 
             // Logik aktuell noch fehlerbehaftet
-            kompetenzen += "<div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
+            kompetenzen += "<div id=\"compBubble\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
             if (kompetenz[i].checked = true) {
                 if (id < 10) {
-                    kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
                 }
                 else {
-                    kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
                 }
             }
             else {

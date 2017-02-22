@@ -42,6 +42,10 @@ body {
     background-repeat:no-repeat;
     width: 370px;
 }
+
+#rechts{
+    display: none;
+}
 #bubblesContent{
     width: 340px;
     height: 130px;
