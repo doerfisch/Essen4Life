@@ -127,6 +127,10 @@ margin-left: -400px;
   height: 60px;
 }
 
+#buttons{
+     display: inline-block;
+}
+
 .dropbtnLeft {
     background-color:#001a3a;
     color: white;
