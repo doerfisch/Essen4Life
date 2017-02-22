@@ -163,7 +163,6 @@ function switchChapter(id){
         case 16:chapter16(); break;
     }
 
-scrollTop();
     var kompetenzJSON = {
         "async": false,
         "url": "",
@@ -178,22 +177,8 @@ scrollTop();
         kompetenz=response;
     });
 
-    var bubblesDone="";
-    var bubblesUndone="";
-    var bubblesEducation="";
-
-
-     for(i=0;i<kompetenz.length;i++){
-        if(true){
-            bubblesEducation+=getBubbleEducation();
-        }else
-            if(kompetenz[i].checked){
-                bubblesDone+=getBubble(kompetenz[i],true);
-            }else{
-                bubblesUndone+=getBubble(kompetenz[i],false);
-            }
-        }
-     var bubbles = bubblesDone+bubblesEducation+bubblesUndone;
+    // Hier müssen die Bubbles der Kompetenzen gesetzt werden
+    // einmal durch iterieren und entsprechende Bubbles für die Kompetenzen setzen (Inhalt, checked flag)
 
     $(document).ready(function refreshBubbles(){
    $('#middleContent').html(bubbles);
@@ -212,27 +197,3 @@ function hoverBubbles(){
     );
 }
 
-function setScrollButtons(){
-    scrollCounter=0;
-    scroll =1;
-    $(document).ready(function(){
-        $("#scrollUp").click(function() {
-            if(scroll>1){
-                scroll--;
-            }
-            $('html, body').animate({
-                scrollTop: $("#scroll"+scroll).offset().top -65
-            }, 500);
-            console.log(scroll);
-        });
-        $("#scrollDown").click(function() {
-            if(scroll<scrollCounter){
-                scroll++;
-            }
-            $('html, body').animate({
-                scrollTop: $("#scroll"+scroll).offset().top -65
-            }, 500);
-        });
-
-    });
-}
