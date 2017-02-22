@@ -48,13 +48,39 @@ body{
   margin-left: auto;
   margin-right: auto;
   display: table;
+  margin-top: 40px;
+}
+#profilepic-change-body{
+
+      height: auto;
+      max-height: 500px;
+      overflow-x: hidden;
+
 }
 #profilepic-change-headline{
   text-align: center;
+  color: #001a3a;
 }
-#profilepic-change-buttons{
-  display: inline;
-text-align: center;
+.profilepic-change-buttons{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.abbrechen{
+  width: 150px;
+  height: 40px;
+  background-color: #8da6d6;
+  color: #4565ad;
+  border-radius: 7px;
+}
+.speichern{
+  width: 150px;
+  height: 40px;
+  background-color: #001a3a;
+  color: white;
+  border-radius: 7px;
 }
 #profilepic-change-images{
   margin-left: auto;
@@ -71,6 +97,9 @@ text-align: center;
   margin-top: 10px;
 }
 #vierteZeile{
+  margin-top: 10px;
+}
+#fünfteZeile{
   margin-top: 10px;
 }
 #delete-profile-body{
