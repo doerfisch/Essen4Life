@@ -30,6 +30,13 @@ body {
   margin-right: auto;
 }
 
+#bubbles {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -5;
+    display: none;
+}
+
 #email{
   font-family: Roboto Thin;
   margin: 5px auto;

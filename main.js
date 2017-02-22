@@ -165,7 +165,7 @@ scrollTop();
         "headers": {
             "authorization":""}}
 
-     kompetenzJSON.headers.authorization = token;
+     kompetenzJSON.headers.authorization = token.token;
      kompetenzJSON.url = "http://46.101.214.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
    var  kompetenz={};
     $.ajax(kompetenzJSON).then(function setKompetenz (response) {
@@ -193,4 +193,15 @@ scrollTop();
    $('#middleContent').html(bubbles);
         hoverBubbles();
 });
+}
+
+function hoverBubbles(){
+    $(".bubbleImg").hover(
+        function() {
+            $(this).parent().children('#rechtsAb').show();
+        },
+        function(){
+            $(this).parent().children('#rechtsAb').hide();
+        }
+    );
 }
