@@ -161,12 +161,12 @@ scrollTop();
     var kompetenzJSON = {
         "async": false,
         "url": "",
-        "method": "POST",
+        "method": "GET",
         "headers": {
             "authorization":""}}
 
      kompetenzJSON.headers.authorization = token.token;
-     kompetenzJSON.url = "http://46.101.214.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
+     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
    var  kompetenz={};
     $.ajax(kompetenzJSON).then(function setKompetenz (response) {
         kompetenz=response;
@@ -192,6 +192,7 @@ scrollTop();
     $(document).ready(function refreshBubbles(){
    $('#middleContent').html(bubbles);
         hoverBubbles();
+        setScrollButtons();
 });
 }
 
@@ -204,4 +205,38 @@ function hoverBubbles(){
             $(this).parent().children('#rechtsAb').hide();
         }
     );
+}
+
+function setScrollButtons(){
+    scrollCounter=0;
+    scroll =1;
+    $(document).ready(function(){
+        $("#scrollUp").click(function() {
+            if(scroll>1){
+                scroll--;
+            }
+            $('html, body').animate({
+                scrollTop: $("#scroll"+scroll).offset().top -65
+            }, 500);
+            console.log(scroll);
+        });
+        $("#scrollDown").click(function() {
+            if(scroll<scrollCounter){
+                scroll++;
+            }
+            $('html, body').animate({
+                scrollTop: $("#scroll"+scroll).offset().top -65
+            }, 500);
+        });
+
+    });
+}
+
+function scrollTop(){
+    $(document).ready(function(){
+        $('content,html').animate({
+            scrollTop: 0
+        }, 0);
+        return false;
+    });
 }
