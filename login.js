@@ -13,7 +13,7 @@ function loginButton(){ /* Nur wenn Email (muss das wirklich ne Email sein?) und
             "mimeType": "multipart/form-data"
         };
 
-        $.ajax(api).done(function (token) {
+        $.ajax(api).then(function (token) {
             window.document.location.href = "mainHTML.html";
             localStorage.setItem('token', token);
         })

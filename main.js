@@ -31,6 +31,7 @@ function getUserInfo(){
         "async": false,
         "url": "http://46.101.214.215:1337/api/V1/student",
         "method": "GET",
+        "body": null,
         "headers": {
             "authorization":""}}
 
@@ -38,17 +39,18 @@ function getUserInfo(){
         "async": false,
         "url": "http://46.101.214.215:1337/api/V1/avatar",
         "method": "GET",
+        "body": null,
         "headers": {
             "authorization":""}}
 
-    getStudentInfo.headers.authorization = token.token;
-    getAvatarInfo.headers.authorization = token.token;
+    getStudentInfo.headers.authorization = token;
+    getAvatarInfo.headers.authorization = token;
 
-    $.ajax(getStudentInfo).done(function (response) {
+    $.ajax(getStudentInfo).then(function (response) {
     student=response;
     });
 
-    $.ajax(getAvatarInfo).done(function (response) {
+    $.ajax(getAvatarInfo).then(function (response) {
     avatare=response;
     });
 }
@@ -148,7 +150,6 @@ function switchChapter(id){
         case 16:chapter16(); break;
     }
 
-bindButtons();
 scrollTop();
     var kompetenzJSON = {
         "async": false,
@@ -157,10 +158,10 @@ scrollTop();
         "headers": {
             "authorization":""}}
 
-     kompetenzJSON.headers.authorization = token.token;
+     kompetenzJSON.headers.authorization = token;
      kompetenzJSON.url = "http://46.101.214.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
    var  kompetenz={};
-    $.ajax(kompetenzJSON).done(function (response) {
+    $.ajax(kompetenzJSON).then(function (response) {
         kompetenz=response;
     });
 
