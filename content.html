@@ -24,15 +24,16 @@
 </div>
 
 
-
+<div id="profilepic-change-body">
+  <link rel="stylesheet" href="contentStyle.css">
 <div class="pictureSwitch" id="changeAvatarPicture">
   <img id="profilePicChange" src="images/images-master/student/superhero-batman-big-active.png">
-      <p style="margin-bottom:0px">PROFILBILD ÄNDERN</p>
-  <div id="buttons">
-  <button id="abbrechenBtn" class="abbrechen" onclick="abbrechen();">ABBRECHEN</button></div>
-    <div id="buttons">
-    <button id="profilepic-change-buttons" class="speichern" type="submit" onclick="saveNewAvatar()">SPEICHERN</button>
-</div>
+    <div id="profilepic-change-headline">PROFILBILD ÄNDERN</div>
+    <div class="profilepic-change-buttons">
+     <button class="abbrechen" onclick="abbrechen();">ABBRECHEN</button>
+     <button class="speichern" type="submit" onclick="saveNewAvatar();">SPEICHERN</button>
+    </div>
+<div id="profilepic-change-images">
 <div class="avatarPictures" id="ersteZeile">
   <img src="images/images-master/student/superhero-batman-big-active.png" onclick="changeAvatar(0)">
   <img src="images/images-master/student/superhero-catwoman-big-active.png" onclick="changeAvatar(1)">
@@ -89,7 +90,7 @@
  <button class="abbrechen" onclick="abbrechen();">ABBRECHEN</button>
  <button class="speichern">SPEICHERN</button>
 </div>
-
+</div>
 </div>
 
 <div id="delete-profile-body">
