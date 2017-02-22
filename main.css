@@ -251,53 +251,72 @@ margin-left: 10px;
 
 
 /*Hintergrundfarben vom Kapitel Menü*/
+#all{
+  height: 40px;
+}
 #chap1{
   background-color: #79ab2e;
+  height:40px;
 }
 #chap2{
   background-color: #c6d54f;
+  height:40px;
 }
 #chap3{
   background-color: #94c122;
+  height:40px;
 }
 #chap4{
   background-color: #44b284;
+  height:40px;
 }
 #chap5{
   background-color: #ffdd00;
+  height:40px;
 }
 #chap6{
   background-color: #ffed98;
+  height:40px;
 }
 #chap7{
   background-color: #fbb900;
+  height:40px;
 }
 #chap8{
   background-color: #ef7d25;
+  height:40px;
 }
 #chap9{
   background-color: #d60d66;
+  height:40px;
 }
 #chap10{
   background-color: #ea518d;
+  height:40px;
 }
 #chap11{
   background-color: #f29db7;
+  height:40px;
 }
 #chap12{
   background-color: #a62068;
+  height:40px;
 }
 #chap13{
   background-color: #008fc8;
+  height:40px;
 }
 #chap14{
   background-color: #62c2d0;
+  height:40px;
 }
 #chap15{
   background-color: #004077;
+  height:40px;
 }
 #chap16{
   background-color: #3873b9;
+  height:40px;
 }
 /*Links verfärben sich beim Drüberfahren*/
 #chap1>a:hover{
@@ -426,3 +445,10 @@ margin-left: 10px;
     margin-top: 10px;
      float: right;
 }
+.scrollable-menu {
+    height: auto;
+    max-height: 450px;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
