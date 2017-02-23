@@ -54,11 +54,11 @@ margin-top: 200px;
 }
 
 #rechts{
-    display: none;
+    display: block;
 }
 #bubblesContent{
     width: 340px;
-    height: 130px;
+    height: 180px;
     padding: 10px;
     position: relative;
     text-align: right;
