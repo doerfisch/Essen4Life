@@ -157,7 +157,7 @@ function saveNewAvatar(){
     avatarJSON.url = "http://46.101.214.215:1337/api/V1/avatar/"+currentAvatar;
     $.ajax(avatarJSON).done(function (response) {
       console.log(response);
-      
+
         if(response.message ="Avatar wurde erfolgreich geändert"){
           $("p").text("Avatar wurde erfolgreich geändert");
                 loginButton();
@@ -242,17 +242,17 @@ function chapter16(){
 
 function foerder1(){
   document.body.style.backgroundColor ="#8da6d6";
-  $('#content').load('content.html #foerder1');
+  $('#content').load('content.html #foerd1');
 }
 
 function foerder2(){
   document.body.style.backgroundColor ="#8da6d6";
-  $('#content').load('content.html #foerder2');
+  $('#content').load('content.html #foerd2');
 }
 
 function foerder3(){
   document.body.style.backgroundColor ="#8da6d6";
-  $('#content').load('content.html #foerder3');
+  $('#content').load('content.html #foerd3');
 }
 
 $(document).ready(getUserInfo());
@@ -381,6 +381,14 @@ function switchCompetency(id) {
     }
 }
 
+function switchFoerder(id){
+  switch(id){
+    case 1:foerder1(); break;
+    case 2:foerder2(); break;
+    case 3:foerder3(); break;
+  }
+}
+
 function switchChapter(id){
     switch(id){
         case 0:chapter0(); break;
@@ -400,14 +408,6 @@ function switchChapter(id){
         case 14:chapter14(); break;
         case 15:chapter15(); break;
         case 16:chapter16(); break;
-    }
-
-    function switchFoerder(id){
-      switch(id){
-        case 1:foerder1(); break;
-        case 2:foerder2(); break;
-        case 3:foerder3(); break;
-      }
     }
 
     var kompetenzJSON = {
