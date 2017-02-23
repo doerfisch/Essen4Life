@@ -257,6 +257,130 @@ function foerder3(){
 
 $(document).ready(getUserInfo());
 
+function switchCompetency(id) {
+    switch (id) {
+        case 0:
+            chapter0();
+            break;
+        case 1:
+            chapter1();
+            break;
+        case 2:
+            chapter2();
+            break;
+        case 3:
+            chapter3();
+            break;
+        case 4:
+            chapter4();
+            break;
+        case 5:
+            chapter5();
+            break;
+        case 6:
+            chapter6();
+            break;
+        case 7:
+            chapter7();
+            break;
+        case 8:
+            chapter8();
+            break;
+        case 9:
+            chapter9();
+            break;
+        case 10:
+            chapter10();
+            break;
+        case 11:
+            chapter11();
+            break;
+        case 12:
+            chapter12();
+            break;
+        case 13:
+            chapter13();
+            break;
+        case 14:
+            chapter14();
+            break;
+        case 15:
+            chapter15();
+            break;
+        case 16:
+            chapter16();
+            break;
+    }
+    var showKompetenzJSON = {
+        "async": false,
+        "url": "",
+        "method": "GET",
+        "headers": {
+            "authorization": ""
+        }
+    }
+
+    showKompetenzJSON.headers.authorization = token.token;
+    showKompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId=" + id;
+    var showKompetenz = {};
+    $.ajax(showKompetenzJSON).then(function setKompetenz(response) {
+        showKompetenz = response;
+        console.log(showKompetenz);
+        showCompetencies();
+    });
+    function showCompetencies() {
+        var kompetenzen = "";
+        for (i = 0; i < showKompetenz.length; i++) {
+            console.log(showKompetenz[i].number);
+
+            // Logik aktuell noch fehlerbehaftet
+            kompetenzen += "<div id=\"compBubble\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
+            if (showKompetenz[i].checked = true && showKompetenz[i].fromDate != null) {
+                if (showKompetenz[i].chapterId < 10) {
+                    kompetenzen += "images/images-master/chapter0" + (showKompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + showKompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
+                }
+                else {
+                    kompetenzen += "images/images-master/chapter" + (showKompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + showKompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
+                }
+            }
+            else {
+                if (showKompetenz[i].chapterId < 10) {
+                    kompetenzen += "images/images-master/chapter0" + (showKompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
+                }
+                else {
+                    kompetenzen += "images/images-master/chapter" + (showKompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
+
+                }
+            }
+
+            kompetenzen += showKompetenz[i].studentText + "</p></div>"
+            if (showKompetenz[i].number < 1000) {
+                if (showKompetenz[i].number < 100) {
+                    if (showKompetenz[i].number < 10) {
+                        numberID = "000" + showKompetenz[i].number;
+                    } else {
+                        numberID = "00" + showKompetenz[i].number;
+                    }
+                } else {
+                    numberID = "0" + showKompetenz[i].number;
+                }
+            } else {
+                numberID = showKompetenz[i].number;
+            }
+            kompetenzen += "<div id=\"compID\"><p>" + showKompetenz[i].chapterId + "." + numberID + "</p></div></div>"
+
+
+        }
+        // Hier müssen die Bubbles der Kompetenzen gesetzt werden
+        // einmal durch iterieren und entsprechende Bubbles für die Kompetenzen setzen (Inhalt, checked flag)
+
+        $(document).ready(function refreshBubbles() {
+            $('#mainContent').html(kompetenzen);
+            hoverBubbles();
+        });
+    }
+}
+
 function switchChapter(id){
     switch(id){
         case 0:chapter0(); break;
@@ -294,9 +418,14 @@ function switchChapter(id){
             "authorization":""}}
 
      kompetenzJSON.headers.authorization = token.token;
-     kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=false&chapterId="+id;
+    if (id>0) {
+        kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=true&chapterId=" + id;
+    }else{
+        kompetenzJSON.url = "http://46.101.204.215:1337/api/V1/studentcompetence?checked=true";
+    }
    var  kompetenz={};
     $.ajax(kompetenzJSON).then(function setKompetenz (response) {
+        console.log(response[5].checked);
         kompetenz=response;
         console.log(kompetenz);
         kompetenzenAnzeigen();
@@ -308,8 +437,8 @@ function switchChapter(id){
 
             // Logik aktuell noch fehlerbehaftet
             kompetenzen += "<div id=\"compBubble\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
-            if (kompetenz[i].checked = true) {
-                if (id < 10) {
+            if (kompetenz[i].checked = true && kompetenz[i].fromDate != null) {
+                if (kompetenz[i].chapterId < 10) {
                     kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
                 }
                 else {
@@ -317,7 +446,7 @@ function switchChapter(id){
                 }
             }
             else {
-                if (id < 10) {
+                if (kompetenz[i].chapterId < 10) {
                 kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
             }
             else {kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
