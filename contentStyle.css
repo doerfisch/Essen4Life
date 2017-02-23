@@ -240,3 +240,8 @@ height:430px;
   text-align: center;
   vertical-align: middle;
 }
+#mainContent {
+    height: auto;
+    max-height: 450px;
+    overflow-x: hidden;
+}
