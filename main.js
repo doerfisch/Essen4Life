@@ -446,7 +446,6 @@ function switchChapter(id){
     }
    var  kompetenz={};
     $.ajax(kompetenzJSON).then(function setKompetenz (response) {
-        console.log(response[5].checked);
         kompetenz=response;
         console.log(kompetenz);
         kompetenzenAnzeigen();
