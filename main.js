@@ -116,8 +116,28 @@ function getUserInfo(){
     $.ajax(getAvatarInfo).then(function (response) {
         console.log(response);
         avatare = response;
+        console.log("Vor SetAll()");
+        $(document).ready(setAll());
     });
 
+}
+
+function setAll(){
+    $('#studentName').html(student.forename+'<br>'+student.surname);
+    //$("#studentImg").attr("src",avatare[student.avatarid].avatarBigUrl);
+    //$("#studentPic").attr("src",avatare[student.avatarid].avatarInactiveUrl);
+    $("#schoolPic").attr("src",student.school.imageUrlbig);
+    $('#schoolName').html(student.school.name);
+
+    var schoolAddress = student.school.address;
+    var splitAddress = schoolAddress.split(",");
+    $('#schoolInfo1').html(splitAddress[0]+"<br>"+splitAddress[1]+"<br>"+student.school.country);
+    $('#schoolInfo2').html("<br>"+student.school.email+"<br>"+student.school.telefon);
+
+    $("#gradeImg").attr("src",student.studyGroups.imageUrlBig);
+    $("#gradePic").attr("src",student.studyGroups.imageUrlInactive);
+    $('#gradeName').html("Klasse<br>"+student.studyGroups.class);
+    $('#gradeTeacher').html(student.formteacher);
 }
 
 var currentAvatar=avatare[student.avatarId];
