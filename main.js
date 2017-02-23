@@ -9,14 +9,50 @@ function changePassword() {
   $('#content').load('content.html #password-change-body');
 }
 function changeAvatarPicture(){
+
   document.body.style.backgroundColor = "white";
   $('#content').load('content.html #profilepic-change-body');
   $(document).ready(function() {
     $(document).ready(function() {
-         $("#profilePicChang").attr("src",avatare[student.avatarId].avatarBigUrl);
+         $("#profilePicChange").attr("src",avatare[student.avatarId].avatarBigUrl);
     }); });
 }
-
+function batman(){
+   $('#content').load('content.html #profilepic-change-body0');
+}
+function catwoman(){
+   $('#content').load('content.html #profilepic-change-body1');
+}
+function gandalf(){
+   $('#content').load('content.html #profilepic-change-body2');
+}
+function greenlantern(){
+   $('#content').load('content.html #profilepic-change-body3');
+}
+function hulk(){
+   $('#content').load('content.html #profilepic-change-body4');
+}
+function bkickass(){
+   $('#content').load('content.html #profilepic-change-body5');
+}
+function luke(){
+   $('#content').load('content.html #profilepic-change-body6');
+}
+function robin(){
+   $('#content').load('content.html #profilepic-change-body7');
+}
+function skeletor(){
+   $('#content').load('content.html #profilepic-change-body8');
+}
+function spiderman(){
+   $('#content').load('content.html #profilepic-change-body9');
+}
+function superman(){
+   $('#content').load('content.html #profilepic-change-body10');
+}
+function superwoman(){
+   $('#content').load('content.html #profilepic-change-body11');
+}
 function deleteProfile(){
   document.body.style.backgroundColor = "white";
   $('#content').load('content.html #delete-profile-body');
