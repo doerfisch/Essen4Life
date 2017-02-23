@@ -180,6 +180,23 @@ function chapter16(){
     $('#content').load('content.html #chapter16');
 }
 
+/* Foerder wird Hintergrundfarbe bei Klick zugeteilt*/
+
+function foerder1(){
+  document.body.style.backgroundColor ="#8da6d6";
+  $('#content').load('content.html #foerder1');
+}
+
+function foerder2(){
+  document.body.style.backgroundColor ="#8da6d6";
+  $('#content').load('content.html #foerder2');
+}
+
+function foerder3(){
+  document.body.style.backgroundColor ="#8da6d6";
+  $('#content').load('content.html #foerder3');
+}
+
 $(document).ready(getUserInfo());
 
 function switchChapter(id){
