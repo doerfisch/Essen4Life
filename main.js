@@ -3,6 +3,8 @@ var token = JSON.parse(tokenS);
 var student = {};
 var avatare = [];
 var educationalPlans = [];
+var educationalPlan = [];
+var allCompetences = [];
 
 
 function changePassword() {
@@ -121,6 +123,18 @@ function getUserInfo(){
         $(document).ready(setAll());
     });
 
+    // funktioniert leider nicht
+    var getAllCompetences = {
+        "async": false,
+        "url": "http://46.101.204.215:1337/api/V1/studentcompetence",
+        "method":"GET",
+        "headers": token.token,
+    }
+
+    $.ajax(getAllCompetences).then(function (response){
+        console.log("Alle Kompetenzen in allCompetences");
+        allCompetences = response;
+    })
 }
 
 function setAll(){
@@ -278,6 +292,46 @@ function getEducationalPlan(){
 
 $(document).ready(getEducationalPlan());
 
+function openEducationalPlan(id){
+    var settings = {
+        "async":false,
+        "url": "http://46.101.204.215:1337/api/V1/educationalPlan/"+id,
+        "methode":"GET",
+        "headers": {
+            "authorization": token.token,
+        }
+    }
+
+    $.ajax(settings).then(function (response) {
+        console.log("Förderplan");
+        console.log(response);
+        educationalPlan = response;
+        showEducationalPlan();
+    });
+
+    function showEducationalPlan(){
+        var kompetenzen = "";
+        var showKompetenz = "";
+        showKompetenz = educationalPlan[0].competences;
+        for (i = 0; i < showKompetenz.length; i++) {
+            console.log(showKompetenz[i]);
+
+            // Logik aktuell noch fehlerbehaftet
+            kompetenzen += "<div id=\"compBubble\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
+            kompetenzen += "<div id=\"comp\"></div><div id=\"compText\"><p>"
+            kompetenzen += showKompetenz[i].note + "</p></div></div></div></div>"
+
+        }
+        // Hier müssen die Bubbles der Kompetenzen gesetzt werden
+        // einmal durch iterieren und entsprechende Bubbles für die Kompetenzen setzen (Inhalt, checked flag)
+
+        $(document).ready(function refreshBubbles() {
+            $('#mainContent').html(kompetenzen);
+            hoverBubbles();
+        });
+    }
+}
+
 function switchCompetency(id) {
     switch (id) {
         case 0:
@@ -408,6 +462,7 @@ function switchFoerder(id){
     case 2:foerder2(); break;
     case 3:foerder3(); break;
   }
+  openEducationalPlan(id);
 }
 
 function switchChapter(id){
