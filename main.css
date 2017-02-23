@@ -10,7 +10,13 @@ body {
       right: 0;
   overflow: auto;
 }
+#startContent{
+  text-align: center;
+  color: #001a3a;
 
+margin-top: 200px;
+  font-size: 30px;
+}
 #headerImageLogin{
   display: table;
   margin-left: auto;
