@@ -710,3 +710,12 @@ margin-left: 10px;
 #contentSchule{
   border-color: #001a3a;
 }
+
+#school{
+  background-image: url("images/school-violet-active.png");
+
+}
+
+#studentPic{
+  background-image: url("images/student/superhero-batman-active.png");
+}
