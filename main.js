@@ -203,6 +203,14 @@ function switchChapter(id){
         case 16:chapter16(); break;
     }
 
+    function switchFoerder(id){
+      switch(id){
+        case 1:foerder1(); break;
+        case 2:foerder2(); break;
+        case 3:foerder3(); break;
+      }
+    }
+
     var kompetenzJSON = {
         "async": false,
         "url": "",
