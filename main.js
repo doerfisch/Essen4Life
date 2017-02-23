@@ -167,7 +167,7 @@ function setAll(){
     $('#schoolInfo2').html("<br>"+student.school.email+"<br>"+student.school.telefon);
 
     $("#gradeImg").attr("src",student.studyGroups.imageUrlBig);
-    $("#gradePic").attr("src",student.studyGroups.imageUrlInactive);
+    //$("#gradePic").attr("src",student.studyGroups.imageUrlInactive);
     $('#gradeName').html("Klasse<br>"+student.studyGroups.class);
     $('#gradeTeacher').html(student.formteacher);
 }
