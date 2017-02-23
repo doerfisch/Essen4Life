@@ -32,7 +32,7 @@ function greenlantern(){
 function hulk(){
    $('#content').load('content.html #profilepic-change-body4');
 }
-function bkickass(){
+function kickass(){
    $('#content').load('content.html #profilepic-change-body5');
 }
 function luke(){
