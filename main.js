@@ -125,6 +125,7 @@ function getUserInfo(){
 
 function setAll(){
     $('#studentName').html(student.forename+'<br>'+student.surname);
+    $('#studentBirth').html(student.birth);
   //  $("#studentImg").attr("src",avatare[student.avatarid].avatarBigUrl);
   //  $("#studentPic").attr("src",avatare[student.avatarid].avatarInactiveUrl);
     $("#schoolPic").attr("src",student.school.imageUrlbig);
@@ -357,18 +358,18 @@ function switchCompetency(id) {
             kompetenzen += "<div id=\"compBubble\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
             if (showKompetenz[i].checked = true && showKompetenz[i].fromDate != null) {
                 if (showKompetenz[i].chapterId < 10) {
-                    kompetenzen += "images/images-master/chapter0" + (showKompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + showKompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/chapter0" + (showKompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + showKompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
                 }
                 else {
-                    kompetenzen += "images/images-master/chapter" + (showKompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + showKompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/chapter" + (showKompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + showKompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
                 }
             }
             else {
                 if (showKompetenz[i].chapterId < 10) {
-                    kompetenzen += "images/images-master/chapter0" + (showKompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/chapter0" + (showKompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
                 }
                 else {
-                    kompetenzen += "images/images-master/chapter" + (showKompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/chapter" + (showKompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
 
                 }
             }
@@ -459,17 +460,17 @@ function switchChapter(id){
             kompetenzen += "<div id=\"compBubble\" class=\"bubbles\"><div id=\"bubblesContent\"><div><img class=\"bubbleImg\" src=\""
             if (kompetenz[i].checked = true && kompetenz[i].fromDate != null) {
                 if (kompetenz[i].chapterId < 10) {
-                    kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/chapter0" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
                 }
                 else {
-                    kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/chapter" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div><div id=\"compText\"><p>"
                 }
             }
             else {
                 if (kompetenz[i].chapterId < 10) {
-                kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
+                kompetenzen += "images/chapter0" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
             }
-            else {kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
+            else {kompetenzen += "images/chapter" + (kompetenz[i].chapterId) + "/competenceUndone.png\"><div id=\"comp\"></div></div><div id=\"compText\"><p>"
 
                 }
             }

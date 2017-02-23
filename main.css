@@ -49,7 +49,7 @@ margin-top: 200px;
 }
 
 .bubbles{
-    background-image: url("images/images-master/contentTextBubble.png");
+    background-image: url("images/contentTextBubble.png");
     background-repeat:no-repeat;
     width: 370px;
 }
@@ -122,15 +122,15 @@ margin-top: 200px;
 /* Bilder-Zustandswechsel */
 
 .open .dropdown-toggle-achievedCompetences{
-    content: url("images/images-master/achievedCompetences-active.png")
+    content: url("images/achievedCompetences-active.png")
 }
 
 .open .dropdown-toggle-help{
-    content: url("images/images-master/help-active.png")
+    content: url("images/help-active.png")
 }
 
 .open .dropdown-toggle-logout{
-    content: url("images/images-master/logout-active.png")
+    content: url("images/logout-active.png")
 }
 
 #footerMain{
@@ -558,97 +558,97 @@ margin-left: 10px;
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/chapterOverview-inactive.png");
+  background-image: url("images/chapterOverview-inactive.png");
 }
 #btn1:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/chapterOverview-active.png");
+  background-image: url("images/chapterOverview-active.png");
 }
 #btn2{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/educationalPlan-inactive.png");
+  background-image: url("images/educationalPlan-inactive.png");
 }
 #btn2:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/educationalPlan-active.png");
+  background-image: url("images/educationalPlan-active.png");
 }
 #btn3{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/achievedCompetences-inactive.png");
+  background-image: url("images/achievedCompetences-inactive.png");
 }
 #btn3:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/achievedCompetences-active.png");
+  background-image: url("images/achievedCompetences-active.png");
 }
 #btn8{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/logout-iactive.png");
+  background-image: url("images/logout-iactive.png");
 }
 #btn8:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/logout-active.png");
+  background-image: url("images/logout-active.png");
 }
 #btn7{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/help-inactive.png");
+  background-image: url("images/help-inactive.png");
 }
 #btn7:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/help-active.png");
+  background-image: url("images/help-active.png");
 }
 #btn6{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/studyGroup/studyGroup_1a_inactive.png");
+  background-image: url("images/studyGroup/studyGroup_1a_inactive.png");
 }
 #btn6:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/studyGroup/studyGroup_1a_active.png");
+  background-image: url("images/studyGroup/studyGroup_1a_active.png");
 }
 #btn5{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/school/school-inactive.png");
+  background-image: url("images/school/school-inactive.png");
 }
 #btn5:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/school/school-green-active.png");
+  background-image: url("images/school/school-green-active.png");
 }
 #btn4{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/student/superhero-batman-inactive.png");
+  background-image: url("images/student/superhero-batman-inactive.png");
 }
 #btn4:hover{
   display: block;
   height: 40px;
   width: 40px;
-  background-image: url("images/images-master/student/superhero-batman-active.png");
+  background-image: url("images/student/superhero-batman-active.png");
 }
 
   #illustrationLeft{
