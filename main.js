@@ -11,6 +11,22 @@ function changePassword() {
   document.body.style.backgroundColor = "white";
   $('#content').load('content.html #password-change-body');
 }
+
+function passwordChange() {
+    var settings = {
+        "async": false,
+        "url": "http://46.101.204.215:1337/api/V1/requestPasswordRecovery",
+        "method": "PUT",
+        "headers": {
+            "authorization": token.token,
+        }
+    }
+
+    $.ajax(settings).then(function (response) {
+        console.log(response);
+    });
+    showHomePage();
+}
 function changeAvatarPicture(){
 
   document.body.style.backgroundColor = "white";
@@ -140,8 +156,8 @@ function getUserInfo(){
 function setAll(){
     $('#studentName').html(student.forename+'<br>'+student.surname);
     $('#studentBirth').html(student.birth);
-    $("#studentImg").attr("src",avatare[student.avatarid].avatarBigUrl);
-    $("#studentPic").attr("src",avatare[student.avatarid].avatarInactiveUrl);
+    $("#studentImg").attr("src",avatare[student.avatarId].avatarInactiveUrl);
+    $("#studentPic").attr("src",avatare[student.avatarId].avatarBigUrl);
     $("#schoolPic").attr("src",student.school.imageUrlbig);
     $('#schoolName').html(student.school.name);
 
