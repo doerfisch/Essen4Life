@@ -2,6 +2,7 @@ var tokenS = localStorage.getItem('token');
 var token = JSON.parse(tokenS);
 var student = {};
 var avatare = [];
+var educationalPlans = [];
 
 
 function changePassword() {
@@ -155,7 +156,7 @@ function saveNewAvatar(){
             "authorization":""}}
     avatarJSON.headers.authorization = token.token;
     avatarJSON.url = "http://46.101.214.215:1337/api/V1/avatar/"+currentAvatar;
-    $.ajax(avatarJSON).done(function (response) {
+    $.ajax(avatarJSON).then(function (response) {
       console.log(response);
 
         if(response.message ="Avatar wurde erfolgreich geändert"){
@@ -164,7 +165,7 @@ function saveNewAvatar(){
                 $(document).ready(function(){
                     $('#errorText').load('ChangeBody.html #errorText');
                 });
-        }
+        } // Anpassung an #IDs
     });
 };
 
@@ -256,6 +257,25 @@ function foerder3(){
 }
 
 $(document).ready(getUserInfo());
+
+function getEducationalPlan(){
+    var settings = {
+        "async": false,
+        "url": "http://46.101.204.215:1337/api/V1/educationalPlan",
+        "method": "GET",
+        "headers": {
+            "authorization": token.token,
+        }
+    }
+
+    $.ajax(settings).then(function (response) {
+        console.log(response);
+        educationalPlans = response;
+    });
+
+}
+
+$(document).ready(getEducationalPlan());
 
 function switchCompetency(id) {
     switch (id) {
