@@ -1,5 +1,6 @@
 body {
     background:white;
+    max-width: 1080px;
 }
 
 #content{
@@ -51,6 +52,8 @@ body {
     height: 130px;
     padding: 10px;
     position: relative;
+    text-align: right;
+
 }
 
 #email{
@@ -90,12 +93,12 @@ body {
   padding: 5px;
   margin: 0 auto;
   position:fixed;
-    bottom: 0;
-    text-align: center;
-width:  800px;
-left: 50%;
-z-index: 1;
-margin-left: -400px;
+  bottom: 0;
+  text-align: center;
+  width:  800px;
+  left: 50%;
+  z-index: 1;
+  margin-left: -400px;
 }
 
 #footerLogin a{
@@ -125,12 +128,12 @@ margin-left: -400px;
   padding: 5px;
   margin: 0 auto;
   position:fixed;
-    bottom: 0;
-    text-align: center;
-width:  800px;
-left: 50%;
-z-index: 1;
-margin-left: -400px;
+  bottom: 0;
+  text-align: center;
+  width:  800px;
+  left: 50%;
+  z-index: 1;
+  margin-left: -400px;
 }
 
 #footer{
@@ -600,4 +603,51 @@ margin-left: 10px;
   height: 40px;
   width: 40px;
   background-image: url("images/images-master/student/superhero-batman-active.png");
+}
+
+  #illustrationLeft{
+    height: 100%;
+    margin-top: 104px;
+    margin-left: 20px;
+    height: 100%;
+    left: 10px;
+    width: 340px;
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    margin-bottom: 0px;
+    z-index: -100;
+
+}
+
+#illustrationRight{
+    height: 100%;
+    right: 10px;
+    width: 310px;
+    margin-top: 104px;
+    margin-right: 20px;
+    position: fixed;
+    padding: 10px;
+    top: 0px;
+    margin-bottom: 0px;
+    z-index: -100;
+}
+
+#scrollBtnUp {
+    right: 0;
+    margin-top: 70px;
+    position: fixed;
+    top: 0;
+    margin-right: 10px;
+    z-index: 100;
+}
+
+#scrollBtnDown {
+    right: 0;
+    margin-bottom: 60px;
+    position: fixed;
+    bottom : 0;
+    right: 0;
+    margin-right: 10px;
+    z-index: 100;
 }
