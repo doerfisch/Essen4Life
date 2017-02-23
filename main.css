@@ -74,7 +74,7 @@ margin-top: 200px;
 #password{
   font-family: Roboto Thin;
   margin: 5px auto;
-  font-size: 13 pt;
+  font-size: 12 pt;
   color: #001a3a;
 }
 
@@ -86,7 +86,8 @@ margin-top: 200px;
     margin-right: auto;
     margin-top: 48px;
     align-self: center;
-    font-family: Roboto Thin;
+    font-family: Brandon Grotesque Black;
+    font-size: 13pt;
 
 }
 
@@ -195,7 +196,7 @@ margin-top: 200px;
     color: white !important;
     width: 250px;
     font-size: 12pt;
-    font-family: Franklin Gothic Heavy;
+    font-family: Brandon Grotesque Black;
     z-index: 1;
     border-style: solid;
     border-color: white;
@@ -209,8 +210,8 @@ margin-top: 200px;
     background-color: #001a3a;
     color: white !important;
     width: 250px;
-    font-size: 12pt;
-    font-family: Franklin Gothic Heavy;
+    font-size: 13pt;
+    font-family: Brandon Grotesque Black;
     z-index: 1;
     border-style: solid;
     border-color: white;

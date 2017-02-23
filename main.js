@@ -142,10 +142,9 @@ function setAll(){
 
 var currentAvatar=avatare[student.avatarId];
 function changeAvatar(newAvatar){
-    avatarChange=newAvatar;
+    currentAvatar=newAvatar;
     $("#profilePicChange").attr("src",avatare[newAvatar].avatarBigUrl);
 }
-
 
 function saveNewAvatar(){
     var avatarJSON = {
@@ -155,9 +154,12 @@ function saveNewAvatar(){
         "headers": {
             "authorization":""}}
     avatarJSON.headers.authorization = token.token;
-    avatarJSON.url = "http://46.101.214.215:1337/api/V1/avatar/"+avatarChange;
-   (avatarJSON).done(function (response) {
+    avatarJSON.url = "http://46.101.214.215:1337/api/V1/avatar/"+currentAvatar;
+    $.ajax(avatarJSON).done(function (response) {
+      console.log(response);
+      
         if(response.message ="Avatar wurde erfolgreich geändert"){
+          $("p").text("Avatar wurde erfolgreich geändert");
                 loginButton();
                 $(document).ready(function(){
                     $('#errorText').load('ChangeBody.html #errorText');
