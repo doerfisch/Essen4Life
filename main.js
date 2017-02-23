@@ -512,3 +512,8 @@ function hoverBubbles(){
         }
     );
 }
+
+function showHomePage(){
+  document.body.style.backgroundColor ="white";
+  $('#content').load('content.html #mainHTML');
+}
