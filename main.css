@@ -710,3 +710,11 @@ margin-left: 10px;
 #contentSchule{
   border-color: #001a3a;
 }
+#studentBirth{
+  color: white;
+  float: right;
+  margin-top: 35px;
+  margin-right: 5px;
+  font-family: Roboto Thin;
+  font-size: 13pt;
+}
