@@ -19,6 +19,8 @@ body{
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: Brandon Grotesque Black;
+  font-size: 20px;
 }
 
 #password-change-input1{
@@ -26,6 +28,7 @@ body{
   width: 300px;
   margin-left: 10px;
   height: 40px;
+  font-family: Brandon Grotesque Black;
 }
 #password-change-input2{
 
@@ -33,12 +36,15 @@ body{
   width: 300px;
   margin-left: 10px;
   height: 40px;
+  font-family: Brandon Grotesque Black;
+
 }
 #password-change-input3{
   float: right;
   width: 300px;
   margin-left: 10px;
   height: 40px;
+  font-family: Brandon Grotesque Black;
 }
 .password-change-button{
   width: 150px;
@@ -46,6 +52,7 @@ body{
   background-color: #001a3a;
   color: white;
   border-radius: 7px;
+  font-family: Brandon Grotesque Black;
 }
 
 .fixfloat {
@@ -61,6 +68,7 @@ line-height:0
 #password-change-block lable{
 display: block;
 width: 300px;
+font-family: Brandon Grotesque Black;
 }
 #profilePicChange{
   margin-left: auto;
@@ -79,6 +87,8 @@ width: 300px;
 #profilepic-change-headline{
   text-align: center;
   color: #001a3a;
+  font-family: Brandon Grotesque Black;
+  font-size: 20px;
 }
 .profilepic-change-buttons{
   display: table;
@@ -93,6 +103,7 @@ width: 300px;
   background-color: #8da6d6;
   color: #4565ad;
   border-radius: 7px;
+  font-family: Brandon Grotesque Black;
 }
 .speichern{
   width: 150px;
@@ -100,6 +111,7 @@ width: 300px;
   background-color: #001a3a;
   color: white;
   border-radius: 7px;
+  font-family: Brandon Grotesque Black;
 }
 #profilepic-change-images{
   margin-left: auto;
@@ -138,6 +150,8 @@ width: 300px;
 #delete-profile-headline{
   text-align: center;
   margin-bottom: 20px;
+  font-family: Brandon Grotesque Black;
+  font-size: 20px;
 }
 
 #passw{
@@ -158,6 +172,7 @@ width: 300px;
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 20px;
+  font-family: Brandon Grotesque Black;
 }
 
 .deletebtn{
