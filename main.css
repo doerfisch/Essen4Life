@@ -23,7 +23,7 @@ body {
     display: table-cell;
     margin-left: auto;
     margin-right: auto;
-    
+
     vertical-align: middle;
 }
 
@@ -300,6 +300,9 @@ margin-left: 10px;
   height: 125px;
   margin-top: 10px;
   color: #4565ad;
+}
+#contentSchule{
+  height: 100px;
 }
 
 
@@ -681,4 +684,17 @@ margin-left: 10px;
     right: 0;
     margin-right: 10px;
     z-index: 100;
+}
+#schoolInfo1{
+  float: right;
+  margin-right: 5px;
+  border-color: #001a3a;
+}
+#schoolInfo2{
+  float: right;
+  margin-right: 5px;
+    border-color: #001a3a;
+}
+#contentSchule{
+  border-color: #001a3a;
 }
