@@ -713,9 +713,17 @@ margin-left: 10px;
 
 #school{
   background-image: url("images/school-violet-active.png");
-
 }
 
 #studentPic{
   background-image: url("images/student/superhero-batman-active.png");
+}
+
+#studentBirth{
+  color: white;
+  float: right;
+  margin-top: 30px;
+  margin-right: 5px;
+  font-family: Roboto Thin;
+  font-size: 13pt;
 }

@@ -126,8 +126,8 @@ function getUserInfo(){
 function setAll(){
     $('#studentName').html(student.forename+'<br>'+student.surname);
     $('#studentBirth').html(student.birth);
-  //  $("#studentImg").attr("src",avatare[student.avatarid].avatarBigUrl);
-  //  $("#studentPic").attr("src",avatare[student.avatarid].avatarInactiveUrl);
+    $("#studentImg").attr("src",avatare[student.avatarid].avatarBigUrl);
+    $("#studentPic").attr("src",avatare[student.avatarid].avatarInactiveUrl);
     $("#schoolPic").attr("src",student.school.imageUrlbig);
     $('#schoolName').html(student.school.name);
 
