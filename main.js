@@ -291,7 +291,7 @@ function switchChapter(id){
                     kompetenzen += "images/images-master/chapter0" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
                 }
                 else {
-                    kompetenzen += "images/images-master/chapter10" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
+                    kompetenzen += "images/images-master/chapter" + (kompetenz[i].chapterId) + "/competenceDone.png\"><div id=\"comp\"><div id=\"rechts\">Du hast diese Kompetenz am<br>" + kompetenz[i].fromDate + " erreicht!</div></div></div></div></div><div id=\"compText\"><p>"
                 }
             }
             else {
